@@ -1,2 +1,61 @@
 // Header
 // ----------------------------------------------------------------------------
+
+header {
+	@extend %wrapper;
+	text-align: center;
+	h1 {
+		display: inline-block;
+		border-bottom: 1px solid $clr-2;
+		font-family: $biorhyme;
+		text-transform: uppercase;
+		text-align: left;
+		padding: 16px 0;
+		margin: 0;
+		line-height: 1em;
+		@include mq-at-least(600px){
+			padding: 48px 0 16px;
+			display: block;
+		}
+	}
+	nav {
+		font-family: $oswald;
+		text-transform: uppercase;
+		border-bottom: 1px solid $clr-2;
+		padding: 0.4em 0;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+		}
+		li {
+			display: inline-block;
+			margin: 0 0.5em 0 0;
+		}
+		a {
+			position: relative;
+			z-index: 2;
+			text-decoration: none;
+			color: $clr-2;
+			transition: all 0.2s ease-out;
+			border-bottom: 1px solid transparent;
+			padding: 0.1em 0.5em;
+			display: block;
+			letter-spacing: 1px;
+			&:hover {
+				background: $clr-1;
+				color: $white;
+			}
+			&.active {
+				background: $clr-2;
+				color: $white;
+				&:hover {
+					background: $clr-1;
+					color: $white;
+				}
+			}
+		}
+
+	}
+}
