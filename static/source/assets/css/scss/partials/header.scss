@@ -5,7 +5,7 @@ header {
 	@extend %wrapper;
 	text-align: center;
 	h1 {
-		display: inline-block;
+		transition: font-size 0.2s ease-out;
 		border-bottom: 1px solid $clr-2;
 		font-family: $biorhyme;
 		text-transform: uppercase;
@@ -13,16 +13,27 @@ header {
 		padding: 16px 0;
 		margin: 0;
 		line-height: 1em;
+		font-size: 1.5em;
+		@include mq-at-least(400px){
+			font-size: 1.6em;
+		}
 		@include mq-at-least(600px){
+			font-size: 2em;
 			padding: 48px 0 16px;
 			display: block;
+		}
+		@include mq-at-least(1200px){
+			font-size: 2.5em;
 		}
 	}
 	nav {
 		font-family: $oswald;
 		text-transform: uppercase;
 		border-bottom: 1px solid $clr-2;
-		padding: 0.4em 0;
+		padding: 12px 0;
+		// @include mq-at-least(600px){
+		// 	padding: 0.8em 0;
+		// }
 		ul {
 			list-style: none;
 			margin: 0;
@@ -31,7 +42,7 @@ header {
 		}
 		li {
 			display: inline-block;
-			margin: 0 0.5em 0 0;
+			margin: 0 8px 0 0;
 		}
 		a {
 			position: relative;
@@ -40,7 +51,7 @@ header {
 			color: $clr-2;
 			transition: all 0.2s ease-out;
 			border-bottom: 1px solid transparent;
-			padding: 0.1em 0.5em;
+			padding: 4px 16px;
 			display: block;
 			letter-spacing: 1px;
 			&:hover {
@@ -48,11 +59,12 @@ header {
 				color: $white;
 			}
 			&.active {
-				background: $clr-2;
-				color: $white;
+				outline: 1px solid $clr-2;
+				color: $clr-2;
 				&:hover {
 					background: $clr-1;
 					color: $white;
+					outline-color: $clr-1;
 				}
 			}
 		}

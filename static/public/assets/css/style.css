@@ -766,23 +766,31 @@ header {
 header {
   text-align: center; }
   header h1 {
-    display: inline-block;
+    transition: font-size 0.2s ease-out;
     border-bottom: 1px solid #444;
     font-family: "BioRhyme Expanded", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
     text-transform: uppercase;
     text-align: left;
     padding: 16px 0;
     margin: 0;
-    line-height: 1em; }
+    line-height: 1em;
+    font-size: 1.5em; }
+    @media screen and (min-width: 400px) {
+      header h1 {
+        font-size: 1.6em; } }
     @media screen and (min-width: 600px) {
       header h1 {
+        font-size: 2em;
         padding: 48px 0 16px;
         display: block; } }
+    @media screen and (min-width: 1200px) {
+      header h1 {
+        font-size: 2.5em; } }
   header nav {
     font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid #444;
-    padding: 0.4em 0; }
+    padding: 12px 0; }
     header nav ul {
       list-style: none;
       margin: 0;
@@ -790,7 +798,7 @@ header {
       text-align: left; }
     header nav li {
       display: inline-block;
-      margin: 0 0.5em 0 0; }
+      margin: 0 8px 0 0; }
     header nav a {
       position: relative;
       z-index: 2;
@@ -798,18 +806,19 @@ header {
       color: #444;
       transition: all 0.2s ease-out;
       border-bottom: 1px solid transparent;
-      padding: 0.1em 0.5em;
+      padding: 4px 16px;
       display: block;
       letter-spacing: 1px; }
       header nav a:hover {
         background: #DA4C48;
         color: #fff; }
       header nav a.active {
-        background: #444;
-        color: #fff; }
+        outline: 1px solid #444;
+        color: #444; }
         header nav a.active:hover {
           background: #DA4C48;
-          color: #fff; }
+          color: #fff;
+          outline-color: #DA4C48; }
 
 /*
     ===========================
