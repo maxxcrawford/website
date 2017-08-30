@@ -1,3 +1,13 @@
 // Fonts
 $biorhyme: 'BioRhyme Expanded', $bodoni-mt-font-stack, serif;
 $oswald: 'Oswald', $helvetica-font-stack, sans-serif;
+$redacted: "Redacted";
+
+@font-face {
+    font-family: "Redacted";
+    src: url("fonts/redacted-regular.eot");
+    src: url("fonts/redacted-regular.woff2") format("woff2"),
+         url("fonts/redacted-regular.woff") format("woff"),
+         url("fonts/redacted-regular.otf") format("opentype"),
+         url("fonts/redacted-regular.svg#filename") format("svg");
+}

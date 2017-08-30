@@ -746,6 +746,10 @@ footer nav:after {
 header nav:after, footer nav:after {
   clear: both; }
 
+@font-face {
+  font-family: "Redacted";
+  src: url("fonts/redacted-regular.eot");
+  src: url("fonts/redacted-regular.woff2") format("woff2"), url("fonts/redacted-regular.woff") format("woff"), url("fonts/redacted-regular.otf") format("opentype"), url("fonts/redacted-regular.svg#filename") format("svg"); }
 /*
     ===========================
     Main CSS
@@ -767,14 +771,79 @@ body {
   color: #444;
   line-height: 1.5em; }
 
-header, footer {
+main, header, footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1em; }
   @media screen and (min-width: 600px) {
-    header, footer {
+    main, header, footer {
       padding: 0 2em; } }
 
+main {
+  font-family: "Redacted"; }
+
+.loading:after {
+  position: fixed;
+  z-index: 100;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(219deg, #da4c48, #e77641, #e741d7);
+  background-size: 600% 600%;
+  -webkit-animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
+  -moz-animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
+  animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out; }
+@-webkit-keyframes slideScreen {
+  0% {
+    left: 0;
+    width: 0; }
+  50% {
+    left: 0;
+    width: 100%; }
+  100% {
+    left: 100%; } }
+@-moz-keyframes slideScreen {
+  0% {
+    left: 0;
+    width: 0; }
+  50% {
+    left: 0;
+    width: 100%; }
+  100% {
+    left: 100%; } }
+@keyframes slideScreen {
+  0% {
+    left: 0;
+    width: 0; }
+  50% {
+    left: 0;
+    width: 100%; }
+  100% {
+    left: 100%; } }
+@-webkit-keyframes gradientSwitch {
+  0% {
+    background-position: 0 99%; }
+  50% {
+    background-position: 100% 2%; }
+  100% {
+    background-position: 0 99%; } }
+@-moz-keyframes gradientSwitch {
+  0% {
+    background-position: 0 99%; }
+  50% {
+    background-position: 100% 2%; }
+  100% {
+    background-position: 0 99%; } }
+@keyframes gradientSwitch {
+  0% {
+    background-position: 0 99%; }
+  50% {
+    background-position: 100% 2%; }
+  100% {
+    background-position: 0 99%; } }
 header {
   text-align: center; }
   header h1 {
