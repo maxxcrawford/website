@@ -768,8 +768,14 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
+  font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
   color: #444;
   line-height: 1.5em; }
+
+a {
+  color: #DA4C48; }
+  a:hover {
+    color: #444; }
 
 main, header, footer {
   max-width: 960px;
@@ -779,8 +785,17 @@ main, header, footer {
     main, header, footer {
       padding: 0 2em; } }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BioRhyme Expanded", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
+  text-transform: uppercase;
+  font-weight: bold; }
+
 main {
-  font-family: "Redacted"; }
+  padding-bottom: 2em; }
+  main p {
+    line-height: 1.8em;
+    margin: 0 0 1em;
+    padding: 0; }
 
 .loading:after {
   position: fixed;
@@ -789,12 +804,11 @@ main {
   left: 0;
   top: 0;
   width: 100%;
-  height: 10px;
+  height: 100%;
   box-shadow: 0 1px 6px #AAA;
   overflow: hidden;
   background: linear-gradient(219deg, #da4c48, #e77641, #e741d7);
   background-size: 600% 600%;
-  transform: skew(-20deg);
   -webkit-animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
   -moz-animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
   animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out; }
@@ -846,6 +860,67 @@ main {
     background-position: 100% 2%; }
   100% {
     background-position: 0 99%; } }
+main section {
+  visibility: none;
+  opacity: 0;
+  transition: all 1s ease;
+  max-height: 0;
+  overflow: hidden; }
+  main section h2 {
+    padding: 0;
+    margin: 0 0 12px; }
+    @media screen and (min-width: 768px) {
+      main section h2 {
+        margin-top: 12px; } }
+  main section.active {
+    opacity: 1;
+    visibility: visible;
+    max-height: none; }
+
+.btn {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  border: 1px solid #444;
+  color: #444;
+  transition: all 0.2s ease-out;
+  padding: 4px 16px;
+  display: inline-block;
+  letter-spacing: 1px; }
+  .btn:hover {
+    border-color: #DA4C48;
+    background: #DA4C48;
+    color: #fff; }
+
+.backToTop {
+  border: 1px solid #AAA;
+  color: #AAA;
+  display: block;
+  margin: 1em auto 0;
+  width: 150px;
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none; } }
+
+.responsive-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 62.5%;
+  border: 1px solid #cacaca;
+  overflow: hidden; }
+
+.responsive-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%; }
+
 header {
   text-align: center; }
   header h1 {
@@ -857,7 +932,8 @@ header {
     padding: 16px 0;
     margin: 0;
     line-height: 1em;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    font-weight: 300; }
     @media screen and (min-width: 400px) {
       header h1 {
         font-size: 1.6em; } }
@@ -906,10 +982,12 @@ header {
           display: none; } }
     @media screen and (max-width: 767px) {
       header nav button.toggle.active + ul {
+        margin-bottom: 1em;
         max-height: 300px;
         visibility: visible; } }
     @media screen and (max-width: 767px) {
       header nav button.toggle + ul {
+        padding-bottom: 0;
         visibility: hidden;
         max-height: 0; } }
     header nav ul {
@@ -968,6 +1046,60 @@ header {
           color: #fff;
           outline-color: #DA4C48; }
 
+.contact {
+  padding: 1em 0 2em; }
+  .contact input {
+    margin: 0 0 1em;
+    display: block;
+    padding: 6px;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none; }
+    @media screen and (min-width: 768px) {
+      .contact input {
+        max-width: 50%; } }
+  .contact label {
+    margin: 0 0 6px;
+    display: block;
+    font-family: "BioRhyme Expanded", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+  .contact textarea {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #444;
+    margin: 0 0 1em;
+    display: block;
+    padding: 6px;
+    width: 100%;
+    outline: none;
+    line-height: 1.3em; }
+    @media screen and (min-width: 768px) {
+      .contact textarea {
+        max-width: 50%; } }
+  .contact button {
+    color: #444;
+    transition: all 0.2s ease-out;
+    display: block;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+    padding: 8px 16px;
+    letter-spacing: 1px;
+    color: #444;
+    line-height: normal;
+    text-transform: uppercase;
+    line-height: normal;
+    border: 1px solid #444;
+    transition: all 0.5s ease-out; }
+    .contact button:hover {
+      border-color: #DA4C48;
+      background: #DA4C48;
+      color: #fff; }
+
 footer nav {
   border-top: 1px solid #444;
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
@@ -1005,7 +1137,8 @@ footer nav {
     letter-spacing: 1px;
     font-size: 24px; }
     footer nav a:hover {
-      color: #DA4C48; }
+      color: #DA4C48;
+      transform: scale(1.1); }
     footer nav a.active {
       color: #444; }
       footer nav a.active:hover {

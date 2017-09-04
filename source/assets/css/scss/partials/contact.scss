@@ -1,0 +1,64 @@
+// Contact
+
+.contact {
+	padding: 1em 0 2em;
+	input {
+		margin: 0 0 1em;
+		display: block;
+		padding: 6px;
+		width: 100%;
+		border-radius: 0;
+		box-shadow: none;
+		@include mq-at-least(768px){
+			max-width: 50%;
+		}
+	}
+	label {
+		margin: 0 0 6px;
+		display: block;
+		font-family: $biorhyme;
+		text-transform: uppercase;
+		font-size: 1.2em;
+	}
+	textarea {
+		box-shadow: none;
+		border-radius: 0;
+		border: 1px solid $clr-2;;
+		margin: 0 0 1em;
+		display: block;
+		padding: 6px;
+		width: 100%;
+		outline: none;
+		line-height: 1.3em;
+		@include mq-at-least(768px){
+			max-width: 50%;
+		}
+	}
+	button {
+		color: $clr-2;
+		transition: all 0.2s ease-out;
+		// padding: 4px 16px;
+		display: block;
+		letter-spacing: 1px;
+		-webkit-appearance: none;
+		appearance: none;
+		background: none;
+		outline: none;
+		font-family: $oswald;
+		padding: 8px 16px;
+		letter-spacing: 1px;
+		color: $clr-2;
+		line-height: normal;
+		text-transform: uppercase;
+		line-height: normal;
+		border: 1px solid $clr-2;
+		transition: all 0.5s ease-out;
+
+		&:hover {
+			border-color: $clr-1;
+			background: $clr-1;
+			color: $white;
+			// transform: scale(1.05);
+		}
+	}
+}

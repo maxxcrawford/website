@@ -13,9 +13,17 @@ body {
 	position: relative;
 	padding: 0;
 	margin: 0;
-	// font-family: $roboto-slab;
+	// font-family: $biorhyme-reg;
+	font-family: $roboto-slab;
 	color: $clr-2;
 	line-height: 1.5em;
+}
+
+a {
+	color: $clr-1;
+	&:hover {
+		color: $clr-2;
+	}
 }
 
 %wrapper {
@@ -27,12 +35,21 @@ body {
 	}
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $biorhyme;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 main {
 	@extend %wrapper;
-	font-family: $redacted;
-
-
+	padding-bottom: 2em;
+	p {
+		line-height: 1.8em;
+		margin: 0 0 1em;
+		padding: 0;
+	}
+	// font-family: $redacted;
 }
 
 .loading {
@@ -43,13 +60,13 @@ main {
 		left: 0;
 		top: 0;
 		width: 100%;
-		// height: 100%;
-		height: 10px;
+		height: 100%;
+		// height: 10px;
 		box-shadow: 0 1px 6px #AAA;
 		overflow: hidden;
 		background: linear-gradient(219deg, #da4c48, #e77641, #e741d7);
 		background-size: 600% 600%;
-		transform: skew(-20deg);
+		// transform: skew(-20deg);
 		-webkit-animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
 		-moz-animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
 		animation: gradientSwitch 2s ease infinite, slideScreen 2s ease-in-out;
@@ -148,4 +165,81 @@ main {
 			}
 		}
 	}
+}
+
+// Section
+
+main section {
+	h2 {
+		padding: 0;
+		margin:  0 0 12px;
+		@include mq-at-least(768px){
+			margin-top: 12px;
+		}
+	}
+	visibility: none;
+	opacity: 0;
+	transition: all 1s ease;
+	max-height: 0;
+	overflow: hidden;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		max-height: none;
+	}
+}
+
+.btn {
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	border: 1px solid $clr-2;
+	color: $clr-2;
+	transition: all 0.2s ease-out;
+	padding: 4px 16px;
+	display: inline-block;
+	// display: block;
+	letter-spacing: 1px;
+	&:hover {
+		border-color: $clr-1;
+		background: $clr-1;
+		color: $white;
+		// transform: scale(1.05);
+	}
+}
+
+.backToTop {
+	border: 1px solid #AAA;
+	color: #AAA;
+	display: block;
+	margin: 1em auto 0;
+	width: 150px;
+	text-align: center;
+}
+
+.mobile-only {
+	@include mq-at-least(768px){
+		display: none;
+	}
+}
+
+// talks
+
+.responsive-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 62.5%;
+  border: 1px solid #cacaca;
+  overflow: hidden;
+}
+
+.responsive-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
 }

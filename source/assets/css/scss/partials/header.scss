@@ -14,6 +14,7 @@ header {
 		margin: 0;
 		line-height: 1em;
 		font-size: 1.5em;
+		font-weight: 300;
 		@include mq-at-least(400px){
 			font-size: 1.6em;
 		}
@@ -29,7 +30,6 @@ header {
 	nav {
 		font-family: $oswald;
 		text-transform: uppercase;
-
 		padding: 0 0;
 		@extend %clearfix;
 		@include mq-at-least(600px){
@@ -69,12 +69,16 @@ header {
 		}
 		button.toggle.active + ul {
 			@include mq-until(768px){
+				margin-bottom: 1em;
+				// padding-bottom: 1em;
 				max-height: 300px;
 				visibility: visible;
 			}
 		}
 		button.toggle + ul {
+
 			@include mq-until(768px){
+				padding-bottom: 0;
 				visibility: hidden;
 				max-height: 0;
 			}
@@ -87,9 +91,6 @@ header {
 			margin: 0;
 			padding: 1em 1px 0.5em;
 			text-align: left;
-
-
-
 			@include mq-until(768px){
 				max-height: 0;
 				overflow: hidden;
@@ -106,12 +107,8 @@ header {
 		li {
 			display: block;
 			max-width: 150px;
-			// width: 75%;
 			margin: 0 auto 0.5em;
 			text-align: center;
-			&:nth-child(even){
-				// text-align: right;
-			}
 			@include mq-at-least(768px){
 				display: inline-block;
 				width: auto;
@@ -140,6 +137,7 @@ header {
 			&:hover {
 				background: $clr-1;
 				color: $white;
+				// transform: scale(1.05);
 			}
 			&.active {
 				outline: 1px solid $clr-2;
