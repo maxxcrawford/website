@@ -29,29 +29,94 @@ header {
 	nav {
 		font-family: $oswald;
 		text-transform: uppercase;
-		border-bottom: 1px solid $clr-2;
-		padding: 12px 0;
+
+		padding: 0 0;
 		@extend %clearfix;
-		// @include mq-at-least(600px){
-		// 	padding: 0.8em 0;
-		// }
+		@include mq-at-least(600px){
+			padding: 12px 0;
+		}
+		button {
+			-webkit-appearance: none;
+			appearance: none;
+			background: none;
+			outline: none;
+			border: none;
+			display: block;
+			width: 100%;
+			font-family: $oswald;
+			padding: 8px 16px;
+			letter-spacing: 1px;
+			color: $clr-2;
+			line-height: normal;
+			text-transform: uppercase;
+			line-height: normal;
+			border-bottom: 1px solid $clr-2;
+			transition: all 0.5s ease-out;
+			// margin: 0 0 1em;
+			i {
+				margin-left: 6px;
+				top: -1px;
+				position: relative;
+			}
+			&.active {
+				border-bottom: none;
+				background: $clr-2;
+				color: $white;
+			}
+			@include mq-at-least(768px){
+				display: none;
+			}
+		}
+		button.toggle.active + ul {
+			@include mq-until(768px){
+				max-height: 300px;
+				visibility: visible;
+			}
+		}
+		button.toggle + ul {
+			@include mq-until(768px){
+				visibility: hidden;
+				max-height: 0;
+			}
+		}
 		ul {
+			border-left: 1px solid $clr-2;
+			border-right: 1px solid $clr-2;
+			border-bottom: 1px solid $clr-2;
 			list-style: none;
 			margin: 0;
-			padding: 0;
+			padding: 1em 1px 0.5em;
 			text-align: left;
+
+
+
+			@include mq-until(768px){
+				max-height: 0;
+				overflow: hidden;
+				transition: all 0.5s ease-out;
+			}
+
+			@include mq-at-least(768px){
+				border-left: none;
+				border-right: none;
+				border-bottom: 1px solid $clr-2;
+				padding: 0 1px 1em;
+			}
 		}
 		li {
-			display: inline-block;
-			margin: 0;
-			width: calc(50% - 2px);
+			display: block;
+			max-width: 150px;
+			// width: 75%;
+			margin: 0 auto 0.5em;
 			text-align: center;
 			&:nth-child(even){
 				// text-align: right;
 			}
 			@include mq-at-least(768px){
+				display: inline-block;
 				width: auto;
 				margin-right: 6px;
+				margin-bottom: 0;
 				&:nth-child(even){
 					text-align: left;
 				}
