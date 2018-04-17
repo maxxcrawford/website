@@ -108,7 +108,7 @@ header {
 			display: block;
 			max-width: 150px;
 			margin: 0 auto 0.5em;
-			text-align: center;
+			// text-align: center;
 			@include mq-at-least(768px){
 				display: inline-block;
 				width: auto;

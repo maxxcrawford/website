@@ -1012,8 +1012,7 @@ header {
     header nav li {
       display: block;
       max-width: 150px;
-      margin: 0 auto 0.5em;
-      text-align: center; }
+      margin: 0 auto 0.5em; }
       @media screen and (min-width: 768px) {
         header nav li {
           display: inline-block;
@@ -1046,25 +1045,26 @@ header {
           color: #fff;
           outline-color: #DA4C48; }
 
-.contact {
+.form-contact {
   padding: 1em 0 2em; }
-  .contact input {
+  .form-contact input {
     margin: 0 0 1em;
     display: block;
     padding: 6px;
     width: 100%;
+    border: 1px solid #444;
     border-radius: 0;
     box-shadow: none; }
     @media screen and (min-width: 768px) {
-      .contact input {
+      .form-contact input {
         max-width: 50%; } }
-  .contact label {
+  .form-contact label {
     margin: 0 0 6px;
     display: block;
     font-family: "BioRhyme Expanded", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
     text-transform: uppercase;
     font-size: 1.2em; }
-  .contact textarea {
+  .form-contact textarea {
     box-shadow: none;
     border-radius: 0;
     border: 1px solid #444;
@@ -1075,9 +1075,9 @@ header {
     outline: none;
     line-height: 1.3em; }
     @media screen and (min-width: 768px) {
-      .contact textarea {
+      .form-contact textarea {
         max-width: 50%; } }
-  .contact button {
+  .form-contact button {
     color: #444;
     transition: all 0.2s ease-out;
     display: block;
@@ -1095,7 +1095,7 @@ header {
     line-height: normal;
     border: 1px solid #444;
     transition: all 0.5s ease-out; }
-    .contact button:hover {
+    .form-contact button:hover {
       border-color: #DA4C48;
       background: #DA4C48;
       color: #fff; }

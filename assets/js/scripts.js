@@ -1,9 +1,9 @@
 (function () {
     // all your code here
   var navLoad = function (target) {
-		console.log( target );
-
-    console.log( target.attr('href') );
+		// console.log( target );
+    //
+    // console.log( target.attr('href') );
 
 		var navItems = $('header nav a');
     var navToggle = $('header nav button');
@@ -12,7 +12,7 @@
 		navItems.removeClass('active');
 		target.addClass('active');
 
-    $('body').addClass('loading');
+    // $('body').addClass('loading');
 
     setTimeout(function () {
       $('main section').removeClass('active');
@@ -25,10 +25,10 @@
 
 
 
-    setTimeout(function () {
-      $('body').removeClass('loading');
-
-    }, 2000);
+    // setTimeout(function () {
+    //   $('body').removeClass('loading');
+    //
+    // }, 2000);
 
     // console.log( $(navTarget) );
 

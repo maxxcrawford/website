@@ -1,12 +1,13 @@
 // Contact
 
-.contact {
+.form-contact {
 	padding: 1em 0 2em;
 	input {
 		margin: 0 0 1em;
 		display: block;
 		padding: 6px;
 		width: 100%;
+		border: 1px solid $clr-2;
 		border-radius: 0;
 		box-shadow: none;
 		@include mq-at-least(768px){
@@ -23,7 +24,7 @@
 	textarea {
 		box-shadow: none;
 		border-radius: 0;
-		border: 1px solid $clr-2;;
+		border: 1px solid $clr-2;
 		margin: 0 0 1em;
 		display: block;
 		padding: 6px;
