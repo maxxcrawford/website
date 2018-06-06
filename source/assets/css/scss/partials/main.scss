@@ -177,16 +177,16 @@ main section {
 			margin-top: 12px;
 		}
 	}
-	visibility: none;
-	opacity: 0;
-	transition: all 1s ease;
-	max-height: 0;
-	overflow: hidden;
-	&.active {
-		opacity: 1;
-		visibility: visible;
-		max-height: none;
-	}
+	// visibility: none;
+	// opacity: 0;
+	// transition: all 1s ease;
+	// max-height: 0;
+	// overflow: hidden;
+	// &.active {
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// 	max-height: none;
+	// }
 }
 
 .btn {
