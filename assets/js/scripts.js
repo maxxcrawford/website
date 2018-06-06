@@ -42,9 +42,13 @@
 	// 	navLoad( $(this) );
 	// });
   //
-  // $(document).on('click', 'header nav button', function(){
-	// 	$(this).toggleClass('active');
-	// });
+  $(document).on('click', 'header nav button', function(){
+		$('.st-container').addClass('st-menu-open');
+	});
+
+  $(document).on('click', '.st-menu-open .st-pusher', function(){
+		$('.st-container').removeClass('st-menu-open');
+	});
 
 $(window).on('load', function(){
   var $headerTitle = $('header h1');
