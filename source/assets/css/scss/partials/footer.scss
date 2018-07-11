@@ -3,57 +3,66 @@
 
 footer {
 	@extend %wrapper;
+
 	nav {
 		border-top: 1px solid $clr-2;
 		font-family: $oswald;
 		text-transform: uppercase;
-		padding: 12px 0;
+		padding: 12px 0 0;
 		@extend %clearfix;
+
 		ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			@include mq-at-least(960px){
+			@include mq-at-least(600px) {
 				text-align: right;
 			}
 		}
+
 		li {
 			display: inline-block;
 			margin: 0;
 			text-align: center;
 			margin-right: 8px;
+
 			&:last-child {
 				margin-right: 0;
 			}
-			@include mq-at-least(960px){
+			@include mq-at-least(960px) {
 				margin-right: 16px;
+
 				&:last-child {
 					margin-right: 0;
 				}
 			}
 
 		}
+
 		a {
 			position: relative;
 			z-index: 2;
 			text-decoration: none;
 			color: $clr-2;
-			transition: all 0.2s ease-out;
+			transition: all .2s ease-out;
 			border-bottom: 1px solid transparent;
 			padding: 4px 0;
 			display: block;
 			letter-spacing: 1px;
 			font-size: 24px;
+
 			&:hover {
 				color: $clr-1;
 				transform: scale(1.1);
 				// background: $clr-1;
 				// color: $white;
 			}
+
 			&.active {
 				// outline: 1px solid $clr-2;
 				color: $clr-2;
+
 				&:hover {
 					background: $clr-1;
 					// background: $clr-1;
@@ -62,6 +71,11 @@ footer {
 				}
 			}
 		}
+	}
 
+	p {
+		margin: 0;
+		padding: 0 0 1em;
+		text-align: right;
 	}
 }
