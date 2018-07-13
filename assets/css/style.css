@@ -861,7 +861,14 @@ h6 {
 }
 
 main {
+  padding-top: 1em;
   padding-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 }
 main p {
   line-height: 1.8em;
@@ -988,8 +995,8 @@ main section h2 {
 .backToTop {
   border: 1px solid #AAA;
   color: #AAA;
-  display: block;
-  margin: 16px auto 0;
+  display: none;
+  margin: 32px auto 0;
   max-width: 180px;
   text-align: center;
   font-size: 12px;
@@ -1022,7 +1029,7 @@ main section h2 {
 
 .highlight {
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
-  line-height: 1.1em;
+  line-height: 1.2em;
   margin: 0;
   padding: 0;
 }
@@ -1043,14 +1050,20 @@ main section h2 {
 header {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 0;
+  }
+}
 header .title {
+  display: block;
   color: #444;
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
 @media screen and (min-width: 600px) {
   header .title {
-    padding: 0 0 16px;
+    padding: 0;
   }
 }
 header h1 {
@@ -1066,11 +1079,11 @@ header h1 {
   display: inline-block;
 }
 header h1 {
-  font-size: 22px;
+  font-size: 18px;
 }
 @media screen and (min-width: 320px) {
   header h1 {
-    font-size: calc(22px + 58 * (100vw - 320px) / 880);
+    font-size: calc(18px + 62 * (100vw - 320px) / 880);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1091,7 +1104,7 @@ header nav {
 }
 @media screen and (min-width: 600px) {
   header nav {
-    padding: 12px 0;
+    padding: 16px 0 0;
   }
 }
 header nav button {
@@ -1109,7 +1122,6 @@ header nav button {
   line-height: normal;
   text-transform: uppercase;
   line-height: normal;
-  border-bottom: 1px solid #444;
   transition: all 0.5s ease-out;
 }
 header nav button i {
@@ -1162,7 +1174,7 @@ header nav ul {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid #444;
-    padding: 0 1px 1em;
+    padding: 0 1px 16px;
   }
 }
 header nav li {
@@ -1353,16 +1365,49 @@ html {
   display: none;
 }
 
-nav.desktop {
-  background: blue;
-}
 @media screen and (max-width: 767px) {
   nav.desktop {
-    background: red;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 16px;
     border-bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+  nav.desktop {
+    top: 45px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  nav.desktop {
+    top: calc(45px + 15 * (100vw - 600px) / 168);
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  nav.desktop {
+    top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav.desktop button {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 599px) {
+  nav.desktop {
+    right: 0;
+  }
+  nav.desktop {
+    top: 13px;
+  }
+}
+@media screen and (max-width: 599px) and (min-width: 320px) {
+  nav.desktop {
+    top: calc(13px + 22 * (100vw - 320px) / 280);
+  }
+}
+@media screen and (max-width: 599px) and (min-width: 600px) {
+  nav.desktop {
+    top: 35px;
   }
 }
 
@@ -1494,7 +1539,7 @@ footer p {
   margin: 0;
   padding: 1em 0;
   text-align: center;
-  color: #666;
+  color: #CCC;
 }
 @media screen and (min-width: 600px) {
   footer p {

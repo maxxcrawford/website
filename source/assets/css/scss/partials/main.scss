@@ -49,7 +49,12 @@ h6 {
 
 main {
 	@extend %wrapper;
+	padding-top: 1em;
 	padding-bottom: 1em;
+	@include mq-at-least(768px) {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
 
 	p {
 		line-height: 1.8em;
@@ -219,8 +224,9 @@ main section {
 .backToTop {
 	border: 1px solid #AAA;
 	color: #AAA;
-	display: block;
-	margin: 16px auto 0;
+	// display: block;
+	display: none;
+	margin: 32px auto 0;
 	max-width: 180px;
 	text-align: center;
 	font-size: 12px;
@@ -256,7 +262,7 @@ main section {
 .highlight {
 	@include fluid-type(font-size, 400px, 1200px, 30px, 60px);
 	font-family: $oswald;
-	line-height: 1.1em;
+	line-height: 1.2em;
 	margin: 0;
 	padding: 0;
 

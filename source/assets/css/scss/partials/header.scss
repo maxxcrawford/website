@@ -4,13 +4,19 @@
 header {
 	@extend %wrapper;
 	text-align: center;
+	// margin-bottom: 16px;
+
+	@include mq-at-least(768px) {
+		margin-bottom: 0;
+	}
 
 	.title {
+		display: block;
 		color: $clr-2;
 		text-decoration: none;
 		transition: color .2s ease-out;
 		@include mq-at-least(600px) {
-			padding: 0 0 16px;
+			padding: 0;
 		}
 	}
 
@@ -26,7 +32,7 @@ header {
 		// font-size: 1.4em;
 		font-weight: 300;
 		display: inline-block;
-		@include fluid-type(font-size, 320px, 1200px, 22px, 80px);
+		@include fluid-type(font-size, 320px, 1200px, 18px, 80px);
 		@include mq-at-least(400px) {
 			// font-size: 1.6em;
 		}
@@ -46,7 +52,7 @@ header {
 		padding: 0;
 		@extend %clearfix;
 		@include mq-at-least(600px) {
-			padding: 12px 0;
+			padding: 16px 0 0;
 		}
 
 		button {
@@ -64,7 +70,7 @@ header {
 			line-height: normal;
 			text-transform: uppercase;
 			line-height: normal;
-			border-bottom: 1px solid $clr-2;
+			// border-bottom: 1px solid $clr-2;
 			transition: all .5s ease-out;
 			// margin: 0 0 1em;
 			// position:
@@ -120,7 +126,7 @@ header {
 				border-left: none;
 				border-right: none;
 				border-bottom: 1px solid $clr-2;
-				padding: 0 1px 1em;
+				padding: 0 1px 16px;
 			}
 		}
 
@@ -330,12 +336,28 @@ html {
 }
 
 nav.desktop {
-	background: blue;
+
 	@include mq-until(768px) {
-		background: red;
 		position: absolute;
-		right: 0;
-		top: 0;
+		right: 16px;
+		// top: 0;
 		border-bottom: 0;
+		z-index: 10;
+		// background: gray;
+		cursor: pointer;
+
+		// height: 70px;
+		// line-height: 70px;
+
+		@include fluid-type(top, 600px, 768px, 45px, 60px);
+		// @include fluid-type(height, 320px, 768px, 70px, 165px);
+
+		button {
+			display: inline-block;
+		}
+	}
+	@include mq-until(600px) {
+		@include fluid-type(top, 320px, 600px, 13px, 35px);
+		right: 0;
 	}
 }
