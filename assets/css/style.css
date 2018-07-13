@@ -1033,6 +1033,7 @@ main section h2 {
   line-height: 1.2em;
   margin: 0;
   padding: 0;
+  text-transform: none;
 }
 .highlight {
   font-size: 30px;
