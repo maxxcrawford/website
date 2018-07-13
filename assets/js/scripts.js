@@ -47,5 +47,37 @@
 		scrollTo('body');
 	});
 
+	function randomClassGen () {
+    var classNum = Math.floor(Math.random() * 6) + 1;
+    var className = 'gif-' + classNum;
+    return className;
+  }
+
+  $('.js-gifToggle').on('click touchstart', function (e) {
+    e.preventDefault();
+
+	$('.js-gifToggle i').toggleClass('fa-toggle-off fa-toggle-on');
+
+	if ( $(this).hasClass('enabled') ) {
+		$(this).removeClass('enabled');
+		$('body').attr('class', '');
+	} else {
+		$(this).addClass('enabled');
+
+
+
+
+	    var bodyClassCurr = $('body').attr('class').length;
+
+	    if (bodyClassCurr > 0) {
+	      $('body').attr('class', '');
+	    } else {
+	      $('body').toggleClass(randomClassGen);
+	    }
+	}
+
+
+  });
+
 	// ...
 })();

@@ -785,14 +785,15 @@ template {
     Settings/Config/Mixins
     ===========================
 */
-footer nav:after, header nav:after,
+footer nav ul:after, footer nav:after, header nav:after,
+footer nav ul:before,
 footer nav:before,
 header nav:before {
   content: "";
   display: table;
 }
 
-footer nav:after, header nav:after {
+footer nav ul:after, footer nav:after, header nav:after {
   clear: both;
 }
 
@@ -1490,7 +1491,7 @@ footer nav ul {
   padding: 0;
   text-align: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
   footer nav ul {
     text-align: right;
     padding: 0 0 0.25em;
@@ -1504,6 +1505,19 @@ footer nav li {
 }
 footer nav li:last-child {
   margin-right: 0;
+}
+footer nav li.footer-toggle {
+  display: block;
+}
+footer nav li.footer-toggle a {
+  color: #888;
+}
+@media screen and (min-width: 400px) {
+  footer nav li.footer-toggle {
+    float: left;
+    display: inline-block;
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 960px) {
   footer nav li {
@@ -1541,11 +1555,35 @@ footer p {
   text-align: center;
   color: #CCC;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
   footer p {
     text-align: right;
     padding: 0 0 1em;
   }
+}
+
+.gif-1 .st-content {
+  background: url("https://maxxcrawford.com/public/img/gif-pizza.gif") center top repeat #1a1a1a;
+}
+
+.gif-2 .st-content {
+  background: url("https://maxxcrawford.com/public/img/gif-static.gif") center top repeat #1a1a1a;
+}
+
+.gif-3 .st-content {
+  background: url("https://maxxcrawford.com/public/img/gif-sammy.gif") center top repeat #1a1a1a;
+}
+
+.gif-4 .st-content {
+  background: url("https://maxxcrawford.com/public/img/gif-whack.gif") center top repeat #1a1a1a;
+}
+
+.gif-5 .st-content {
+  background: url("https://maxxcrawford.com/public/img/gif-skel.gif") center top repeat #1a1a1a;
+}
+
+.gif-6 .st-content {
+  background: url("https://maxxcrawford.com/public/img/gif-tron.gif") center top repeat #1a1a1a;
 }
 
 /*

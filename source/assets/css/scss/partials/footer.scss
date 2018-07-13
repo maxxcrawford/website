@@ -16,7 +16,8 @@ footer {
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			@include mq-at-least(600px) {
+			@extend %clearfix;
+			@include mq-at-least(400px) {
 				text-align: right;
 				padding: 0 0 .25em;
 			}
@@ -30,6 +31,22 @@ footer {
 
 			&:last-child {
 				margin-right: 0;
+			}
+
+			&.footer-toggle {
+				display: block;
+
+				a {
+					color: #888;
+				}
+			}
+
+			@include mq-at-least(400px) {
+				&.footer-toggle {
+					float: left;
+					display: inline-block;
+					margin-right: 0;
+				}
 			}
 			@include mq-at-least(960px) {
 				margin-right: 16px;
@@ -79,7 +96,7 @@ footer {
 		padding: 1em 0;
 		text-align: center;
 		color: #CCC;
-		@include mq-at-least(600px) {
+		@include mq-at-least(400px) {
 			text-align: right;
 			padding: 0 0 1em;
 		}
