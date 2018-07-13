@@ -798,6 +798,7 @@ footer nav:after, header nav:after {
 
 .u-color-red {
   color: #E4503E;
+  display: inline-block;
 }
 
 @font-face {
@@ -860,7 +861,7 @@ h6 {
 }
 
 main {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 main p {
   line-height: 1.8em;
@@ -988,9 +989,10 @@ main section h2 {
   border: 1px solid #AAA;
   color: #AAA;
   display: block;
-  margin: 1em auto 0;
+  margin: 16px auto 0;
   max-width: 180px;
   text-align: center;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1021,6 +1023,8 @@ main section h2 {
 .highlight {
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   line-height: 1.1em;
+  margin: 0;
+  padding: 0;
 }
 .highlight {
   font-size: 30px;
@@ -1043,6 +1047,11 @@ header .title {
   color: #444;
   text-decoration: none;
   transition: color 0.2s ease-out;
+}
+@media screen and (min-width: 600px) {
+  header .title {
+    padding: 0 0 16px;
+  }
 }
 header h1 {
   transition: font-size 0.2s ease-out;
@@ -1201,6 +1210,38 @@ header nav a.active:hover {
   outline-color: #E4503E;
 }
 
+nav.mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+nav.mobile li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+nav.mobile a {
+  color: #fff;
+  font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1s ease-out;
+}
+nav.mobile a.active:hover, nav.mobile a:hover {
+  background: #444;
+  color: #fff;
+}
+nav.mobile a.active {
+  background: #fff;
+  color: #E4503E;
+}
+
 .st-container,
 .st-content,
 .st-pusher,
@@ -1239,7 +1280,7 @@ html {
   right: 0;
   width: 0;
   height: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   content: "";
   opacity: 0;
   -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
@@ -1310,6 +1351,19 @@ html {
 
 .st-menu::after {
   display: none;
+}
+
+nav.desktop {
+  background: blue;
+}
+@media screen and (max-width: 767px) {
+  nav.desktop {
+    background: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: 0;
+  }
 }
 
 .form-contact {
@@ -1394,6 +1448,7 @@ footer nav ul {
 @media screen and (min-width: 600px) {
   footer nav ul {
     text-align: right;
+    padding: 0 0 0.25em;
   }
 }
 footer nav li {
@@ -1437,8 +1492,15 @@ footer nav a.active:hover {
 }
 footer p {
   margin: 0;
-  padding: 0 0 1em;
-  text-align: right;
+  padding: 1em 0;
+  text-align: center;
+  color: #666;
+}
+@media screen and (min-width: 600px) {
+  footer p {
+    text-align: right;
+    padding: 0 0 1em;
+  }
 }
 
 /*

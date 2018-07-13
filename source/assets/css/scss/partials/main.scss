@@ -49,7 +49,7 @@ h6 {
 
 main {
 	@extend %wrapper;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 
 	p {
 		line-height: 1.8em;
@@ -220,9 +220,10 @@ main section {
 	border: 1px solid #AAA;
 	color: #AAA;
 	display: block;
-	margin: 1em auto 0;
+	margin: 16px auto 0;
 	max-width: 180px;
 	text-align: center;
+	font-size: 12px;
 }
 
 .mobile-only {
@@ -256,4 +257,7 @@ main section {
 	@include fluid-type(font-size, 400px, 1200px, 30px, 60px);
 	font-family: $oswald;
 	line-height: 1.1em;
+	margin: 0;
+	padding: 0;
+
 }

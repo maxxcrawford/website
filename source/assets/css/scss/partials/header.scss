@@ -9,6 +9,9 @@ header {
 		color: $clr-2;
 		text-decoration: none;
 		transition: color .2s ease-out;
+		@include mq-at-least(600px) {
+			padding: 0 0 16px;
+		}
 	}
 
 	h1 {
@@ -176,7 +179,44 @@ header {
 	}
 }
 
-nav.mobile {}
+nav.mobile {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+
+	li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $white;
+		font-family: $oswald;
+		text-transform: uppercase;
+		display: block;
+		padding: 16px;
+		border-bottom: 1px solid rgba($clr-2, 0.2);
+		font-size: 24px;
+		text-align: center;
+		text-decoration: none;
+		transition: all .1s ease-out;
+
+		&.active:hover,
+		&:hover {
+			background: $clr-2;
+			color: $white;
+		}
+
+		&.active {
+			background: $white;
+			color: $clr-1;
+		}
+	}
+}
 
 .st-container,
 .st-content,
@@ -216,7 +256,7 @@ html {
 	right: 0;
 	width: 0;
 	height: 0;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.4);
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity .5s, width .1s .5s, height .1s .5s;
@@ -287,4 +327,15 @@ html {
 
 .st-menu::after {
 	display: none;
+}
+
+nav.desktop {
+	background: blue;
+	@include mq-until(768px) {
+		background: red;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-bottom: 0;
+	}
 }

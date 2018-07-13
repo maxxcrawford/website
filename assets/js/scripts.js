@@ -7,7 +7,7 @@
 		$('.st-container').removeClass('st-menu-open');
 	});
 
-	var $desktopNavList = $('nav.desktop ul');
+	var $desktopNavList = $('nav.desktop ul li');
 	var $mobileNav = $('nav.mobile ul');
 
 	var cloneNav = function() {
