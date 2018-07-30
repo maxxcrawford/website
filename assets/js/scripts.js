@@ -72,7 +72,8 @@
 			if (bodyClassCurr > 0) {
 				$('body').attr('class', '');
 			} else {
-				$('body').toggleClass(randomClassGen);
+				$('body').toggleClass('gif-1');
+				// $('body').toggleClass(randomClassGen);
 			}
 		}
 

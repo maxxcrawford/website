@@ -3,10 +3,39 @@
 .gif-3,
 .gif-4,
 .gif-5,
-.gif-6 {}
+.gif-6 {
+	main {
+		background: $white;
+	}
+}
+
+$pizzaPink: #FDD1D1;
+$pizzaYellow: #FEF378;
+$pizzaPinkDark: #FB315D;
 
 .gif-1 .st-content {
-	background: url("https://maxxcrawford.com/public/img/gif-pizza.gif") center top repeat #1a1a1a;
+	background: url("../img/pizza-bg-full.gif") top left repeat $pizzaPink;
+	background-size: auto
+}
+
+.gif-1 {
+	header, main, footer {
+		background: $pizzaYellow;
+		// color: $pizzaPinkDark;
+	}
+	.u-color-red {
+		color: $pizzaPinkDark;
+	}
+	header nav a:hover {
+		background: $pizzaPinkDark;
+	}
+	footer p {
+		color: $pizzaPinkDark;
+	}
+	cursor: url("../img/pizza-cursor.gif") 0 0, auto;
+	.footer-toggle a {
+		color: $pizzaPinkDark;
+	}
 }
 
 // .gif-1 header h1 span {
