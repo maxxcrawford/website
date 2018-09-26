@@ -2,11 +2,11 @@ $pizzaPink: #FDD1D1;
 $pizzaYellow: #FEF378;
 $pizzaPinkDark: #FB315D;
 
+
 .gif-1 {
-	footer,
-	header,
-	main {
+	header, main, footer {
 		background: rgba($pizzaYellow, 0.75);
+		// color: $pizzaPinkDark;
 	}
 
 	.u-color-red {

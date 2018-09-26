@@ -32,7 +32,7 @@ header {
 		// font-size: 1.4em;
 		font-weight: 300;
 		display: inline-block;
-		@include fluid-type(font-size, 320px, 1200px, 18px, 80px);
+		@include fluid-type(font-size, 320px, 960px, 28px, 80px);
 		@include mq-at-least(400px) {
 			// font-size: 1.6em;
 		}

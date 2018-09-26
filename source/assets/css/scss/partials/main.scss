@@ -260,11 +260,47 @@ main section {
 }
 
 .highlight {
-	@include fluid-type(font-size, 400px, 1200px, 30px, 60px);
+	@include fluid-type(font-size, 400px, 1200px, 40px, 70px);
 	font-family: $oswald;
 	line-height: 1.2em;
 	margin: 0;
 	padding: 0;
 	text-transform: none;
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: lighten($clr-2, 10%);
+	}
 
+}
+
+.row {
+	// display: flex;
+	// flex-wrap: wrap;
+
+}
+
+.col {
+	padding: 0 0 1em;
+	strong {
+		font-family: $oswald;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		display: inline-block;
+		padding: 0 0 0.5rem;
+	}
+	ul {
+		margin: 0 0 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		border: 0.1px solid $clr-2;
+		padding: 5px 10px;
+		margin: 0 0.5em 0.75em 0;
+		// border-radius: 10px;
+		i {
+			margin-left: 0.5em;
+		}
+	}
 }
