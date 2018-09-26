@@ -20,7 +20,7 @@ $pizzaPinkDark: #FB315D;
 
 .gif-1 {
 	header, main, footer {
-		background: $pizzaYellow;
+		background: rgba($pizzaYellow, 0.75);
 		// color: $pizzaPinkDark;
 	}
 	.u-color-red {
