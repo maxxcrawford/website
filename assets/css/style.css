@@ -1333,17 +1333,23 @@ footer nav {
     footer nav li:last-child {
       margin-right: 0; }
     footer nav li.footer-toggle {
-      display: block; }
+      display: block;
+      margin-top: 1em; }
       footer nav li.footer-toggle a {
-        color: #888; }
+        color: #888;
+        font-size: 1.1rem; }
     @media screen and (min-width: 400px) {
       footer nav li.footer-toggle {
         float: left;
         display: inline-block;
-        margin-right: 0; } }
+        margin-right: 0; }
+        footer nav li.footer-toggle a {
+          font-size: 1.5rem; } }
     @media screen and (min-width: 960px) {
       footer nav li {
         margin-right: 16px; }
+        footer nav li.footer-toggle {
+          margin-top: 0; }
         footer nav li:last-child {
           margin-right: 0; } }
   footer nav a {
@@ -1374,18 +1380,6 @@ footer p {
       text-align: right;
       padding: 0 0 1em; } }
 
-.gif-1 main,
-.gif-2 main,
-.gif-3 main,
-.gif-4 main,
-.gif-5 main,
-.gif-6 main {
-  background: #fff; }
-
-.gif-1 .st-content {
-  background: url("../img/pizza-bg-full.gif") top left repeat #FDD1D1;
-  background-size: auto; }
-
 .gif-1 {
   cursor: url("../img/pizza-cursor.gif") 0 0, auto; }
   .gif-1 header, .gif-1 main, .gif-1 footer {
@@ -1398,21 +1392,51 @@ footer p {
     color: #FB315D; }
   .gif-1 .footer-toggle a {
     color: #FB315D; }
+  .gif-1 .st-content {
+    background: url("../img/pizza-bg-full.gif") top left repeat #FDD1D1;
+    background-size: auto; }
 
-.gif-2 .st-content {
-  background: url("https://maxxcrawford.com/public/img/gif-static.gif") center top repeat #1a1a1a; }
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1em;
+  margin-right: -1em; }
+  .cards > li {
+    outline: 1px solid black;
+    padding: 1em; }
+    @media screen and (min-width: 600px) {
+      .cards > li {
+        width: 50%; } }
+    @media screen and (min-width: 768px) {
+      .cards > li {
+        width: 33.3333333333%; } }
+    @media screen and (min-width: 960px) {
+      .cards > li {
+        width: 25%; } }
+  .cards .card img {
+    max-width: 100%;
+    display: block; }
+  .cards .card h3 {
+    font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+    text-transform: uppercase; }
+  .cards .tags ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .cards .tags ul li {
+      display: inline-block;
+      background: #E4503E;
+      padding: 5px 10px;
+      margin-right: 5px; }
 
-.gif-3 .st-content {
-  background: url("https://maxxcrawford.com/public/img/gif-sammy.gif") center top repeat #1a1a1a; }
-
-.gif-4 .st-content {
-  background: url("https://maxxcrawford.com/public/img/gif-whack.gif") center top repeat #1a1a1a; }
-
-.gif-5 .st-content {
-  background: url("https://maxxcrawford.com/public/img/gif-skel.gif") center top repeat #1a1a1a; }
-
-.gif-6 .st-content {
-  background: url("https://maxxcrawford.com/public/img/gif-tron.gif") center top repeat #1a1a1a; }
+#work legend span {
+  display: inline-block;
+  margin-right: 1em;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px; }
 
 /*
     ===========================

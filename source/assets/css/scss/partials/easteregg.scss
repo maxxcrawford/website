@@ -1,209 +1,33 @@
-.gif-1,
-.gif-2,
-.gif-3,
-.gif-4,
-.gif-5,
-.gif-6 {
-	main {
-		background: $white;
-	}
-}
-
 $pizzaPink: #FDD1D1;
 $pizzaYellow: #FEF378;
 $pizzaPinkDark: #FB315D;
 
-.gif-1 .st-content {
-	background: url("../img/pizza-bg-full.gif") top left repeat $pizzaPink;
-	background-size: auto
-}
 
 .gif-1 {
 	header, main, footer {
 		background: rgba($pizzaYellow, 0.75);
 		// color: $pizzaPinkDark;
 	}
+
 	.u-color-red {
 		color: $pizzaPinkDark;
 	}
+
 	header nav a:hover {
 		background: $pizzaPinkDark;
 	}
+
 	footer p {
 		color: $pizzaPinkDark;
 	}
 	cursor: url("../img/pizza-cursor.gif") 0 0, auto;
+
 	.footer-toggle a {
 		color: $pizzaPinkDark;
 	}
+
+	.st-content {
+		background: url("../img/pizza-bg-full.gif") top left repeat $pizzaPink;
+		background-size: auto;
+	}
 }
-
-// .gif-1 header h1 span {
-// 	background: #FDF389;
-// }
-//
-// .gif-1 .about {
-// 	border-color: #FDF389;
-// }
-//
-// .gif-1 footer ul.social li a {
-// 	outline-color: #FDF389;
-// 	color: #FDF389;
-// }
-//
-// .gif-1 footer ul.social li a:hover {
-// 	background-color: #FDF389;
-// }
-//
-// .gif-1 .portfolio ƒ article h2 {
-// 	border-color: #FDF389;
-// }
-//
-// .gif-1 .background {
-// 	background: url("https://maxxcrawford.com/public/img/bg-fade-pink.png") repeat;
-// }
-
-.gif-2 .st-content {
-	background: url("https://maxxcrawford.com/public/img/gif-static.gif") center top repeat #1a1a1a;
-}
-
-// .gif-2 header h1 span {
-// 	background: #f043cc;
-// }
-//
-// .gif-2 .about {
-// 	border-color: #f043cc;
-// }
-//
-// .gif-2 footer ul.social li a {
-// 	outline-color: #f043cc;
-// 	color: #f043cc;
-// }
-//
-// .gif-2 footer ul.social li a:hover {
-// 	background-color: #f043cc;
-// }
-//
-// .gif-2 .portfolio ƒ article h2 {
-// 	border-color: #f043cc;
-// }
-//
-// .gif-2 .background {
-// 	background: url("https://maxxcrawford.com/public/img/bg-fade.png") repeat;
-// }
-
-.gif-3 .st-content {
-	background: url("https://maxxcrawford.com/public/img/gif-sammy.gif") center top repeat #1a1a1a;
-}
-
-// .gif-3 header h1 span {
-// 	background: #9be489;
-// }
-//
-// .gif-3 .about {
-// 	border-color: #9be489;
-// }
-//
-// .gif-3 footer ul.social li a {
-// 	outline-color: #9be489;
-// 	color: #9be489;
-// }
-//
-// .gif-3 footer ul.social li a:hover {
-// 	background-color: #9be489;
-// }
-//
-// .gif-3 .portfolio ƒ article h2 {
-// 	border-color: #9be489;
-// }
-//
-// .gif-3 .background {
-// 	background: url("https://maxxcrawford.com/public/img/bg-fade.png") repeat;
-// }
-
-.gif-4 .st-content {
-	background: url("https://maxxcrawford.com/public/img/gif-whack.gif") center top repeat #1a1a1a;
-}
-//
-// .gif-4 header h1 span {
-// 	background: #ffd562;
-// }
-//
-// .gif-4 .about {
-// 	border-color: #ffd562;
-// }
-//
-// .gif-4 footer ul.social li a {
-// 	outline-color: #ffd562;
-// 	color: #ffd562;
-// }
-//
-// .gif-4 footer ul.social li a:hover {
-// 	background-color: #ffd562;
-// }
-//
-// .gif-4 .portfolio ƒ article h2 {
-// 	border-color: #ffd562;
-// }
-//
-// .gif-4 .background {
-// 	background: url("https://maxxcrawford.com/public/img/bg-fade.png") repeat;
-// }
-
-.gif-5 .st-content {
-	background: url("https://maxxcrawford.com/public/img/gif-skel.gif") center top repeat #1a1a1a;
-}
-//
-// .gif-5 header h1 span {
-// 	background: #95424b;
-// }
-//
-// .gif-5 .about {
-// 	border-color: #95424b;
-// }
-//
-// .gif-5 footer ul.social li a {
-// 	outline-color: #95424b;
-// 	color: #95424b;
-// }
-//
-// .gif-5 footer ul.social li a:hover {
-// 	background-color: #95424b;
-// }
-//
-// .gif-5 .portfolio ƒ article h2 {
-// 	border-color: #95424b;
-// }
-//
-// .gif-5 .background {
-// 	background: url("https://maxxcrawford.com/public/img/bg-fade.png") repeat;
-// }
-
-.gif-6 .st-content {
-	background: url("https://maxxcrawford.com/public/img/gif-tron.gif") center top repeat #1a1a1a;
-}
-//
-// .gif-6 header h1 span {
-// 	background: #b6dddb;
-// }
-//
-// .gif-6 .about {
-// 	border-color: #b6dddb;
-// }
-//
-// .gif-6 footer ul.social li a {
-// 	outline-color: #b6dddb;
-// 	color: #b6dddb;
-// }
-//
-// .gif-6 footer ul.social li a:hover {
-// 	background-color: #b6dddb;
-// }
-//
-// .gif-6 .portfolio ƒ article h2 {
-// 	border-color: #b6dddb;
-// }
-//
-// .gif-6 .background {
-// 	background: url("https://maxxcrawford.com/public/img/bg-fade.png") repeat;
-// }

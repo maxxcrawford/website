@@ -35,9 +35,11 @@ footer {
 
 			&.footer-toggle {
 				display: block;
+				margin-top: 1em;
 
 				a {
 					color: #888;
+					font-size: 1.1rem;
 				}
 			}
 
@@ -46,10 +48,18 @@ footer {
 					float: left;
 					display: inline-block;
 					margin-right: 0;
+
+					a {
+						font-size: 1.5rem;
+					}
 				}
 			}
 			@include mq-at-least(960px) {
 				margin-right: 16px;
+
+				&.footer-toggle {
+					margin-top: 0;
+				}
 
 				&:last-child {
 					margin-right: 0;
