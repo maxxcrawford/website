@@ -3,6 +3,7 @@ $roboto-slab: 'Roboto Slab', $bodoni-mt-font-stack, serif;
 $biorhyme: 'BioRhyme Expanded', $bodoni-mt-font-stack, serif;
 $oswald: 'Oswald', $helvetica-font-stack, sans-serif;
 $redacted: "Redacted";
+$din: "D-DIN Condensed", $helvetica-font-stack, sans-serif;
 
 @font-face {
     font-family: "Redacted";
@@ -11,4 +12,28 @@ $redacted: "Redacted";
          url("fonts/redacted-regular.woff") format("woff"),
          url("fonts/redacted-regular.otf") format("opentype"),
          url("fonts/redacted-regular.svg#filename") format("svg");
+}
+
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url('fonts/D-DINCondensed.eot'); /* IE9 Compat Modes */
+  src: url('fonts/D-DINCondensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/D-DINCondensed.woff') format('woff'), /* Modern Browsers */
+       url('fonts/D-DINCondensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/D-DINCondensed.svg#1d957c29f2426a1693769174fedba9e7') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url('fonts/D-DINCondensed-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/D-DINCondensed-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/D-DINCondensed-Bold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/D-DINCondensed-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/D-DINCondensed-Bold.svg#efc7b2e6a434d6b30356a19f1082174e') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
 }

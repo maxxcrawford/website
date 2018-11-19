@@ -754,6 +754,22 @@ footer nav:after, footer nav ul:after {
   font-family: "Redacted";
   src: url("fonts/redacted-regular.eot");
   src: url("fonts/redacted-regular.woff2") format("woff2"), url("fonts/redacted-regular.woff") format("woff"), url("fonts/redacted-regular.otf") format("opentype"), url("fonts/redacted-regular.svg#filename") format("svg"); }
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url("fonts/D-DINCondensed.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/D-DINCondensed.eot?#iefix") format("embedded-opentype"), url("fonts/D-DINCondensed.woff") format("woff"), url("fonts/D-DINCondensed.ttf") format("truetype"), url("fonts/D-DINCondensed.svg#1d957c29f2426a1693769174fedba9e7") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'D-DIN Condensed';
+  src: url("fonts/D-DINCondensed-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/D-DINCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/D-DINCondensed-Bold.woff") format("woff"), url("fonts/D-DINCondensed-Bold.ttf") format("truetype"), url("fonts/D-DINCondensed-Bold.svg#efc7b2e6a434d6b30356a19f1082174e") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
 /*
     ===========================
     Main CSS
@@ -927,11 +943,11 @@ main section h2 {
   height: 100%; }
 
 .highlight {
-  font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   line-height: 1.2em;
   margin: 0;
   padding: 0;
-  text-transform: none; }
+  text-transform: uppercase; }
   .highlight {
     font-size: 40px; }
     @media screen and (min-width: 400px) {
@@ -948,21 +964,35 @@ main section h2 {
 .col {
   padding: 0 0 1em; }
   .col strong {
-    font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+    font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.75em;
     display: inline-block;
-    padding: 0 0 0.5rem; }
+    padding: 0 0 0.75rem; }
   .col ul {
     margin: 0 0 0;
     padding: 0; }
+  .col a {
+    text-decoration: none;
+    color: #444;
+    transition: all 0.2s ease-out; }
+    .col a i {
+      color: #E4503E; }
+    .col a:hover {
+      border-color: #E4503E;
+      background: #E4503E;
+      color: #fff; }
+      .col a:hover i {
+        color: #fff; }
   .col li {
     display: inline-block;
-    border: 0.1px solid #444;
-    padding: 5px 10px;
     margin: 0 0.5em 0.75em 0; }
     .col li i {
       margin-left: 0.5em; }
+    .col li span, .col li a {
+      border: 0.1px solid #444;
+      display: inline-block;
+      padding: 5px 10px; }
 
 header {
   text-align: center; }
@@ -1000,6 +1030,10 @@ header {
       header h1 {
         padding: 48px 0 16px;
         display: block; } }
+
+.st-container nav.mobile ul {
+  margin: 0;
+  padding: 0; }
 
 .form-contact {
   padding: 1em 0 2em; }
@@ -1060,7 +1094,8 @@ header {
 
 footer nav {
   border-top: 1px solid #444;
-  font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 12px 0 0; }
   footer nav ul {
@@ -1068,7 +1103,7 @@ footer nav {
     margin: 0;
     padding: 0;
     text-align: center; }
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 500px) {
       footer nav ul {
         text-align: right;
         padding: 0 0 .25em; } }
@@ -1084,12 +1119,16 @@ footer nav {
       margin-top: 1em; }
       footer nav li.footer-toggle a {
         color: #888;
-        font-size: 1.1rem; }
+        font-size: 1.2rem; }
     @media screen and (min-width: 400px) {
+      footer nav li.footer-toggle a {
+        font-size: 1.3rem; } }
+    @media screen and (min-width: 500px) {
       footer nav li.footer-toggle {
         float: left;
         display: inline-block;
-        margin-right: 0; }
+        margin-right: 0;
+        margin-top: 0; }
         footer nav li.footer-toggle a {
           font-size: 1.5rem; } }
     @media screen and (min-width: 960px) {
@@ -1122,7 +1161,7 @@ footer p {
   padding: 1em 0;
   text-align: center;
   color: #CCC; }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 500px) {
     footer p {
       text-align: right;
       padding: 0 0 1em; } }
@@ -1142,6 +1181,18 @@ footer p {
   .gif-1 .st-content {
     background: url("../img/pizza-bg-full.gif") top left repeat #FDD1D1;
     background-size: auto; }
+  .gif-1 .col a {
+    color: #444; }
+    .gif-1 .col a i {
+      color: #FB315D; }
+    .gif-1 .col a:hover {
+      border-color: #FB315D;
+      background: #FB315D;
+      color: #fff; }
+      .gif-1 .col a:hover i {
+        color: #fff; }
+  .gif-1 .col li span, .gif-1 .col li a {
+    border: 0.1px solid #444; }
 
 .cards {
   list-style: none;

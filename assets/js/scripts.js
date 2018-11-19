@@ -15,10 +15,10 @@
 	};
 
 	$(window).on('load', function() {
-		var $headerTitle = $('header h1');
-		var headerTitleText = $headerTitle.text();
-		headerTitleText = headerTitleText.replace(/.$/, 'Đ');
-		$headerTitle.text(headerTitleText);
+		// var $headerTitle = $('header h1');
+		// var headerTitleText = $headerTitle.text();
+		// headerTitleText = headerTitleText.replace(/.$/, 'Đ');
+		// $headerTitle.text(headerTitleText);
 		cloneNav();
 	});
 

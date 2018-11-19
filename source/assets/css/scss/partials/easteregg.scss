@@ -30,4 +30,26 @@ $pizzaPinkDark: #FB315D;
 		background: url("../img/pizza-bg-full.gif") top left repeat $pizzaPink;
 		background-size: auto;
 	}
+	.col {
+		a {
+			color: $clr-2;
+			i {
+				color: $pizzaPinkDark;
+			}
+			&:hover {
+				border-color: $pizzaPinkDark;
+				background: $pizzaPinkDark;
+				color: $white;
+				i {
+					color: $white;
+				}
+			}
+		}
+		li {
+			span, a {
+				border: 0.1px solid $clr-2;
+			}
+		}
+	}
+
 }

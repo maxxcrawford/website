@@ -46,6 +46,8 @@ header {
 		}
 	}
 
+
+
 	// nav {
 	// 	font-family: $oswald;
 	// 	text-transform: uppercase;
@@ -361,3 +363,10 @@ header {
 // 		right: 0;
 // 	}
 // }
+
+.st-container {
+	nav.mobile ul {
+		margin: 0;
+		padding: 0;
+	}
+}

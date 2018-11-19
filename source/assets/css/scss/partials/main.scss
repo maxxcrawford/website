@@ -261,11 +261,11 @@ main section {
 
 .highlight {
 	@include fluid-type(font-size, 400px, 1200px, 40px, 70px);
-	font-family: $oswald;
+	font-family: $din;
 	line-height: 1.2em;
 	margin: 0;
 	padding: 0;
-	text-transform: none;
+	text-transform: uppercase;
 	a {
 		display: inline-block;
 		text-decoration: none;
@@ -283,24 +283,44 @@ main section {
 .col {
 	padding: 0 0 1em;
 	strong {
-		font-family: $oswald;
+		font-family: $din;
 		text-transform: uppercase;
-		font-size: 1.3em;
+		font-size: 1.75em;
 		display: inline-block;
-		padding: 0 0 0.5rem;
+		padding: 0 0 0.75rem;
 	}
 	ul {
 		margin: 0 0 0;
 		padding: 0;
 	}
+	a {
+		text-decoration: none;
+		color: $clr-2;
+		transition: all 0.2s ease-out;
+		i {
+			color: $clr-1;
+		}
+		&:hover {
+			border-color: $clr-1;
+			background: $clr-1;
+			color: $white;
+			i {
+				color: $white;
+			}
+		}
+	}
 	li {
 		display: inline-block;
-		border: 0.1px solid $clr-2;
-		padding: 5px 10px;
+
 		margin: 0 0.5em 0.75em 0;
 		// border-radius: 10px;
 		i {
 			margin-left: 0.5em;
+		}
+		span, a {
+			border: 0.1px solid $clr-2;
+			display: inline-block;
+			padding: 5px 10px;
 		}
 	}
 }

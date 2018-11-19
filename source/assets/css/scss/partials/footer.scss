@@ -6,7 +6,8 @@ footer {
 
 	nav {
 		border-top: 1px solid $clr-2;
-		font-family: $oswald;
+		font-family: $din;
+		font-weight: 700;
 		text-transform: uppercase;
 		padding: 12px 0 0;
 		@extend %clearfix;
@@ -17,7 +18,7 @@ footer {
 			padding: 0;
 			text-align: center;
 			@extend %clearfix;
-			@include mq-at-least(400px) {
+			@include mq-at-least(500px) {
 				text-align: right;
 				padding: 0 0 .25em;
 			}
@@ -39,15 +40,23 @@ footer {
 
 				a {
 					color: #888;
-					font-size: 1.1rem;
+					font-size: 1.2rem;
 				}
 			}
 
 			@include mq-at-least(400px) {
 				&.footer-toggle {
+					a {
+						font-size: 1.3rem;
+					}
+				}
+			}
+			@include mq-at-least(500px) {
+				&.footer-toggle {
 					float: left;
 					display: inline-block;
 					margin-right: 0;
+					margin-top: 0;
 
 					a {
 						font-size: 1.5rem;
@@ -106,7 +115,7 @@ footer {
 		padding: 1em 0;
 		text-align: center;
 		color: #CCC;
-		@include mq-at-least(400px) {
+		@include mq-at-least(500px) {
 			text-align: right;
 			padding: 0 0 1em;
 		}
