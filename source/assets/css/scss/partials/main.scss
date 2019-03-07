@@ -270,8 +270,20 @@ main section {
 		display: inline-block;
 		text-decoration: none;
 		color: lighten($clr-2, 10%);
+		border-bottom: 3px solid lighten($clr-2, 10%);
+		transition: all 0.2s ease-out;
+		line-height: 1em;
+		&:hover {
+			color: $clr-1;
+			border-color: $clr-1;
+		}
 	}
 
+
+}
+
+p.copy {
+	max-width: 800px;
 }
 
 .row {
@@ -281,7 +293,7 @@ main section {
 }
 
 .col {
-	padding: 0 0 1em;
+	padding: 0 0 2em;
 	strong {
 		font-family: $din;
 		text-transform: uppercase;

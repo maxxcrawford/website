@@ -959,10 +959,19 @@ main section h2 {
   .highlight a {
     display: inline-block;
     text-decoration: none;
-    color: #5e5e5e; }
+    color: #5e5e5e;
+    border-bottom: 3px solid #5e5e5e;
+    transition: all 0.2s ease-out;
+    line-height: 1em; }
+    .highlight a:hover {
+      color: #E4503E;
+      border-color: #E4503E; }
+
+p.copy {
+  max-width: 800px; }
 
 .col {
-  padding: 0 0 1em; }
+  padding: 0 0 2em; }
   .col strong {
     font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
     text-transform: uppercase;
