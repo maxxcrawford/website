@@ -978,6 +978,8 @@ main section h2 {
     transition: all 0.2s ease-out; }
     .col a i {
       color: #E4503E; }
+      .col a i.black {
+        color: #848484; }
     .col a:hover {
       border-color: #E4503E;
       background: #E4503E;
@@ -987,12 +989,28 @@ main section h2 {
   .col li {
     display: inline-block;
     margin: 0 0.5em 0.75em 0; }
+    .col li.progress span, .col li.progress a {
+      opacity: .5;
+      cursor: wait;
+      border-color: rgba(68, 68, 68, 0.5); }
     .col li i {
       margin-left: 0.5em; }
-    .col li span, .col li a {
+    .col li > span, .col li a {
       border: 0.1px solid #444;
       display: inline-block;
       padding: 5px 10px; }
+    .col li a span {
+      display: block; }
+
+.legend {
+  margin-bottom: 2em; }
+  .legend .legend-list li {
+    display: block; }
+  @media screen and (min-width: 600px) {
+    .legend {
+      margin-bottom: 0; }
+      .legend .legend-list li {
+        display: inline-block; } }
 
 header {
   text-align: center; }
