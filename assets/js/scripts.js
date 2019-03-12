@@ -83,7 +83,7 @@
 
 	$(document).on('mouseover', '.js-list', function() {
 		var list = $(this).next('span').data('list');
-		console.log(list);
+		// console.log(list);
 	});
 
 	// ...
