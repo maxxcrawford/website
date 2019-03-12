@@ -10,17 +10,7 @@
 	var $desktopNavList = $('nav.desktop ul li');
 	var $mobileNav = $('nav.mobile ul');
 
-	var cloneNav = function() {
-		$desktopNavList.clone().appendTo($mobileNav);
-	};
 
-	$(window).on('load', function() {
-		// var $headerTitle = $('header h1');
-		// var headerTitleText = $headerTitle.text();
-		// headerTitleText = headerTitleText.replace(/.$/, 'Đ');
-		// $headerTitle.text(headerTitleText);
-		cloneNav();
-	});
 
 	$(window).on('resize', function() {
 		if ($(window).width() >= 768 && $('#st-container').hasClass('st-menu-open')) {
