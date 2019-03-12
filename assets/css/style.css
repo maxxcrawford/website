@@ -789,6 +789,7 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
+  scroll-behavior: auto;
   font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
   color: #444;
   line-height: 1.5em; }
@@ -1238,7 +1239,8 @@ html {
 
 .st-content {
   overflow-y: scroll;
-  background: #fff; }
+  background: #fff;
+  -webkit-overflow-scrolling: touch; }
 
 .st-content,
 .st-content-inner {

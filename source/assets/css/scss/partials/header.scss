@@ -261,6 +261,7 @@ html {
 .st-content {
 	overflow-y: scroll;
 	background: $white;
+	-webkit-overflow-scrolling: touch;
 }
 
 .st-content,
