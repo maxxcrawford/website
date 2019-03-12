@@ -1,5 +1,5 @@
 (function() {
-	$(document).on('click', 'header nav button', function() {
+	$(document).on('click', 'header button', function() {
 		$('.st-container').addClass('st-menu-open');
 	});
 

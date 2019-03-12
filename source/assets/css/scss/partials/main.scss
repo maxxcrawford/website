@@ -57,11 +57,30 @@ main {
 	}
 
 	p {
-		line-height: 1.8em;
+		line-height: 1.5em;
 		margin: 0 0 1em;
 		padding: 0;
 	}
 	// font-family: $redacted;
+
+	h1 {
+		font-size: 1.7em;
+		line-height: 1.2em;
+		margin: 0;
+		padding: 0 0 8px;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		line-height: 1.2em;
+		margin: 0;
+		padding: 0 0 16px;
+	}
+
+	hr {
+		margin: 2em 0 3em;
+	}
+
 }
 
 .loading {
@@ -212,6 +231,8 @@ main section {
 	display: inline-block;
 	// display: block;
 	letter-spacing: 1px;
+	margin-right: 0.5em;
+	margin-bottom: 0.75em;
 
 	&:hover {
 		border-color: $clr-1;
@@ -248,6 +269,7 @@ main section {
 	padding-bottom: 62.5%;
 	border: 1px solid #cacaca;
 	overflow: hidden;
+	margin-bottom: 2em;
 }
 
 .responsive-container iframe {
@@ -361,4 +383,33 @@ p.copy {
 		margin-bottom: 0;
 	}
 
+}
+
+.talk-title {
+	display: block;
+	margin: 1.5em 0 1em;
+	padding: 0;
+	a {
+		font-family: $din;
+		text-transform: uppercase;
+		font-size: 1.75em;
+		display: inline-block;
+
+		color: $clr-2;
+		text-decoration: none;
+	}
+	em {
+		display: block;
+	}
+}
+
+.hero {
+	width: 100%;
+	max-width: 400px;
+	margin: 2em 0;
+}
+
+.hidden a {
+	visibility: hidden;
+	opacity: 0;
 }
