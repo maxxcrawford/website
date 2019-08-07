@@ -20,7 +20,7 @@
 
 	function scrollTo(selector, offset) {
 		var target = $(selector);
-		console.log(target);
+		// console.log(target);
 
 		if (target.length) {
 			var targetOffset = target.offset().top;
@@ -75,6 +75,9 @@
 		var list = $(this).next('span').data('list');
 		// console.log(list);
 	});
+
+
+	console.log("Thanks for checking out my site! 🍕");
 
 	// ...
 })();
