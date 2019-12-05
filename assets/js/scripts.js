@@ -54,9 +54,6 @@
 		} else {
 			$(this).addClass('enabled');
 
-
-
-
 			var bodyClassCurr = $('body').attr('class').length;
 
 			if (bodyClassCurr > 0) {
