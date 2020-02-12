@@ -1746,7 +1746,29 @@ footer nav a.active {
 footer nav a.active:hover {
   background: #E4503E;
 }
+footer .nolink {
+  display: inline-block;
+  width: auto;
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+footer .nolink:hover {
+  color: #E4503E;
+}
+footer .nolink:hover svg {
+  fill: #E4503E;
+}
+footer .nolink svg {
+  transition: fill 0.2s ease-out;
+  fill: #CCCCCC;
+  display: inline-block;
+  width: auto;
+  height: 0.8rem;
+  margin-right: 0.25rem;
+}
 footer p {
+  font-size: 1rem;
   margin: 0;
   padding: 1em 0;
   text-align: center;
