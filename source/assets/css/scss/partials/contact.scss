@@ -2,6 +2,7 @@
 
 .form-contact {
 	padding: 1em 0 2em;
+	max-width: 500px;
 	input {
 		margin: 0 0 1em;
 		display: block;
@@ -11,9 +12,9 @@
 		border-radius: 0;
 		box-shadow: none;
 		font-family: $roboto-slab;
-		@include mq-at-least(768px){
-			max-width: 50%;
-		}
+		// @include mq-at-least(768px){
+		//
+		// }
 	}
 	label {
 		margin: 0 0 6px;
@@ -33,10 +34,8 @@
 		width: 100%;
 		outline: none;
 		line-height: 1.3em;
-		@include mq-at-least(768px){
-			max-width: 50%;
-		}
 	}
+	
 	button {
 		color: $clr-2;
 		transition: all 0.2s ease-out;

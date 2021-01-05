@@ -1596,6 +1596,7 @@ html {
 
 .form-contact {
   padding: 1em 0 2em;
+  max-width: 500px;
 }
 .form-contact input {
   margin: 0 0 1em;
@@ -1606,11 +1607,6 @@ html {
   border-radius: 0;
   box-shadow: none;
   font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
-}
-@media screen and (min-width: 768px) {
-  .form-contact input {
-    max-width: 50%;
-  }
 }
 .form-contact label {
   margin: 0 0 6px;
@@ -1630,11 +1626,6 @@ html {
   width: 100%;
   outline: none;
   line-height: 1.3em;
-}
-@media screen and (min-width: 768px) {
-  .form-contact textarea {
-    max-width: 50%;
-  }
 }
 .form-contact button {
   color: #444;
