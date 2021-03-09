@@ -33,13 +33,26 @@ $pizzaPinkDark: #FB315D;
 	}
 	cursor: url("../img/pizza-cursor.gif") 0 0, auto;
 
-	.footer-toggle a {
+	.footer-toggle a, .nolink {
 		color: $pizzaPinkDark;
+	}
+
+	.nolink svg {
+		fill: $pizzaPinkDark;
 	}
 
 	.st-content {
 		background: url("../img/pizza-bg-full.gif") top left repeat $pizzaPink;
 		background-size: auto;
+		perspective: 1000px;
+		perspective-origin: 50% 50%;
+		animation: animation 100s linear infinite;
+	}
+
+	@keyframes animation {
+   100%{
+    	background-position:0px 3000px;
+  	}
 	}
 
 	.col {

@@ -1797,12 +1797,23 @@ footer p {
 .gif-1 footer p {
   color: #FB315D;
 }
-.gif-1 .footer-toggle a {
+.gif-1 .footer-toggle a, .gif-1 .nolink {
   color: #FB315D;
+}
+.gif-1 .nolink svg {
+  fill: #FB315D;
 }
 .gif-1 .st-content {
   background: url("../img/pizza-bg-full.gif") top left repeat #FDD1D1;
   background-size: auto;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+@keyframes animation {
+  100% {
+    background-position: 0px 3000px;
+  }
 }
 .gif-1 .col a {
   color: #444;
