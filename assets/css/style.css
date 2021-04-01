@@ -785,6 +785,16 @@ template {
     Settings/Config/Mixins
     ===========================
 */
+:root {
+  --red: #E4503E;
+  --text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #CCC;
+  }
+}
 footer nav ul:after, footer nav:after, header nav:after,
 footer nav ul:before,
 footer nav:before,
@@ -798,7 +808,7 @@ footer nav ul:after, footer nav:after, header nav:after {
 }
 
 .u-color-red {
-  color: #E4503E;
+  color: var(--red);
   display: inline-block;
 }
 
@@ -830,6 +840,16 @@ footer nav ul:after, footer nav:after, header nav:after {
     Main CSS
     ===========================
 */
+:root {
+  --red: #E4503E;
+  --text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #CCC;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -841,20 +861,20 @@ html {
 }
 
 body {
-  background: #fff;
+  background-color: #fff;
   position: relative;
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
-  color: #444;
+  color: var(--text);
   line-height: 1.5em;
 }
 
 a {
-  color: #E4503E;
+  color: var(--red);
 }
 a:hover {
-  color: #444;
+  color: var(--text);
 }
 
 footer, header, main {
@@ -1013,8 +1033,8 @@ main section h2 {
   position: relative;
   z-index: 2;
   text-decoration: none;
-  border: 1px solid #444;
-  color: #444;
+  border: 1px solid var(--text);
+  color: var(--text);
   transition: all 0.2s ease-out;
   padding: 4px 16px;
   display: inline-block;
@@ -1022,8 +1042,8 @@ main section h2 {
   margin-bottom: 0.75em;
 }
 .btn:hover {
-  border-color: #E4503E;
-  background: #E4503E;
+  border-color: var(--red);
+  background: var(--red);
   color: #fff;
 }
 
@@ -1092,8 +1112,8 @@ main section h2 {
   line-height: 1em;
 }
 .highlight a:hover {
-  color: #E4503E;
-  border-color: #E4503E;
+  color: var(--red);
+  border-color: var(--red);
 }
 
 p.copy {
@@ -1116,18 +1136,18 @@ p.copy {
 }
 .col a {
   text-decoration: none;
-  color: #444;
+  color: var(--text);
   transition: all 0.2s ease-out;
 }
 .col a i {
-  color: #E4503E;
+  color: var(--red);
 }
 .col a i.black {
   color: #848484;
 }
 .col a:hover {
-  border-color: #E4503E;
-  background: #E4503E;
+  border-color: var(--red);
+  background: var(--red);
   color: #fff;
 }
 .col a:hover i {
@@ -1140,13 +1160,13 @@ p.copy {
 .col li.progress span, .col li.progress a {
   opacity: 0.5;
   cursor: wait;
-  border-color: rgba(68, 68, 68, 0.5);
+  border-color: rgba(var(--text), 0.5);
 }
 .col li i {
   margin-left: 0.5em;
 }
 .col li > span, .col li a {
-  border: 0.1px solid #444;
+  border: 0.1px solid var(--text);
   display: inline-block;
   padding: 5px 10px;
 }
@@ -1179,7 +1199,7 @@ p.copy {
   text-transform: uppercase;
   font-size: 1.75em;
   display: inline-block;
-  color: #444;
+  color: var(--text);
   text-decoration: none;
 }
 .talk-title em {
@@ -1197,6 +1217,16 @@ p.copy {
   opacity: 0;
 }
 
+:root {
+  --red: #E4503E;
+  --text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #CCC;
+  }
+}
 header {
   text-align: center;
 }
@@ -1207,7 +1237,7 @@ header {
 }
 header .title {
   display: block;
-  color: #444;
+  color: var(--text);
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -1226,7 +1256,7 @@ header button.toggle {
   width: 100%;
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   letter-spacing: 1px;
-  color: #444;
+  color: var(--text);
   line-height: normal;
   text-transform: uppercase;
   line-height: normal;
@@ -1234,8 +1264,8 @@ header button.toggle {
 }
 header button.toggle span {
   padding: 4px 12px;
-  outline: 1px solid #444;
-  color: #444;
+  outline: 1px solid var(--text);
+  color: var(--text);
   display: inline-block;
 }
 header button.toggle i {
@@ -1245,7 +1275,7 @@ header button.toggle i {
 }
 header button.toggle.active {
   border-bottom: none;
-  background: #444;
+  background: var(--text);
   color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -1284,7 +1314,7 @@ header h1 {
   }
 }
 header nav {
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--text);
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   text-transform: uppercase;
   padding: 0;
@@ -1309,9 +1339,9 @@ header nav {
   }
 }
 header nav ul {
-  border-left: 1px solid #444;
-  border-right: 1px solid #444;
-  border-bottom: 1px solid #444;
+  border-left: 1px solid var(--text);
+  border-right: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
   list-style: none;
   margin: 0;
   padding: 1em 1px 0.5em;
@@ -1328,7 +1358,7 @@ header nav ul {
   header nav ul {
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid var(--text);
     padding: 0 1px 16px;
     display: block;
   }
@@ -1357,7 +1387,7 @@ header nav a {
   position: relative;
   z-index: 2;
   text-decoration: none;
-  color: #444;
+  color: var(--text);
   transition: background 0.2s ease-out, color 0.2s ease-out, outline 0.2s ease-out;
   border-bottom: 1px solid transparent;
   padding: 4px 16px;
@@ -1365,17 +1395,17 @@ header nav a {
   letter-spacing: 1px;
 }
 header nav a:hover {
-  background: #E4503E;
+  background: var(--red);
   color: #fff;
 }
 header nav a.active {
-  outline: 1px solid #444;
-  color: #444;
+  outline: 1px solid var(--text);
+  color: var(--text);
 }
 header nav a.active:hover {
-  background: #E4503E;
+  background: var(--red);
   color: #fff;
-  outline-color: #E4503E;
+  outline-color: var(--red);
 }
 
 nav.mobile ul {
@@ -1391,7 +1421,7 @@ nav.mobile li {
   text-align: center;
 }
 nav.mobile a {
-  color: #444;
+  color: var(--text);
   padding: 10px 18px;
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   text-transform: uppercase;
@@ -1403,13 +1433,13 @@ nav.mobile a {
   transition: background 0.1s ease-out, color 0.1s ease-out, outline 0.1s ease-out;
 }
 nav.mobile a.active:hover, nav.mobile a:hover {
-  background: #E4503E;
+  background: var(--red);
   color: #fff;
-  outline-color: #E4503E;
+  outline-color: var(--red);
 }
 nav.mobile a.active {
-  outline: 1px solid #444;
-  color: #444;
+  outline: 1px solid var(--text);
+  color: var(--text);
 }
 
 .st-container,
@@ -1603,7 +1633,7 @@ html {
   display: block;
   padding: 6px;
   width: 100%;
-  border: 1px solid #444;
+  border: 1px solid var(--text);
   border-radius: 0;
   box-shadow: none;
   font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
@@ -1619,7 +1649,7 @@ html {
   font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
   box-shadow: none;
   border-radius: 0;
-  border: 1px solid #444;
+  border: 1px solid var(--text);
   margin: 0 0 1em;
   display: block;
   padding: 6px;
@@ -1628,7 +1658,7 @@ html {
   line-height: 1.3em;
 }
 .form-contact button {
-  color: #444;
+  color: var(--text);
   transition: all 0.2s ease-out;
   cursor: pointer;
   display: block;
@@ -1640,20 +1670,20 @@ html {
   font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   padding: 8px 16px;
   letter-spacing: 1px;
-  color: #444;
+  color: var(--text);
   line-height: normal;
   text-transform: uppercase;
   line-height: normal;
-  border: 1px solid #444;
+  border: 1px solid var(--text);
 }
 .form-contact button:hover {
-  border-color: #E4503E;
-  background: #E4503E;
+  border-color: var(--red);
+  background: var(--red);
   color: #fff;
 }
 
 footer nav {
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--text);
   font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1719,7 +1749,7 @@ footer nav a {
   position: relative;
   z-index: 2;
   text-decoration: none;
-  color: #444;
+  color: var(--text);
   transition: all 0.2s ease-out;
   border-bottom: 1px solid transparent;
   padding: 4px 0;
@@ -1728,14 +1758,14 @@ footer nav a {
   font-size: 24px;
 }
 footer nav a:hover {
-  color: #E4503E;
+  color: var(--red);
   transform: scale(1.1);
 }
 footer nav a.active {
-  color: #444;
+  color: var(--text);
 }
 footer nav a.active:hover {
-  background: #E4503E;
+  background: var(--red);
 }
 footer .nolink {
   display: inline-block;
@@ -1745,10 +1775,10 @@ footer .nolink {
   transition: color 0.2s ease-out;
 }
 footer .nolink:hover {
-  color: #E4503E;
+  color: var(--red);
 }
 footer .nolink:hover svg {
-  fill: #E4503E;
+  fill: var(--red);
 }
 footer .nolink svg {
   transition: fill 0.2s ease-out;
@@ -1772,6 +1802,24 @@ footer p {
   }
 }
 
+:root {
+  --red: #E4503E;
+  --text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  .gif-1 {
+    --text: #444;
+  }
+  .gif-1 .highlight a {
+    color: #5e5e5e;
+    border-color: #5e5e5e;
+  }
+  .gif-1 .highlight a:hover {
+    color: #FB315D;
+    border-color: #FB315D;
+  }
+}
 .gif-1 {
   cursor: url("../img/pizza-cursor.gif") 0 0, auto;
 }
@@ -1816,7 +1864,7 @@ footer p {
   }
 }
 .gif-1 .col a {
-  color: #444;
+  color: var(--text);
 }
 .gif-1 .col a i {
   color: #FB315D;
@@ -1831,7 +1879,7 @@ footer p {
 }
 .gif-1 .col li a,
 .gif-1 .col li span {
-  border: 0.1px solid #444;
+  border: 0.1px solid var(--text);
 }
 
 .cards {
@@ -1874,11 +1922,11 @@ footer p {
   margin-bottom: 1em;
   text-align: center;
   text-decoration: none;
-  outline: 1px solid #E4503E;
+  outline: 1px solid var(--red);
   transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 .cards .card a:hover {
-  background: #E4503E;
+  background: var(--red);
   color: #fff;
 }
 .cards .card a span {
@@ -1901,7 +1949,7 @@ footer p {
 }
 .cards .tags ul li {
   display: inline-block;
-  background: #E4503E;
+  background: var(--red);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -1924,6 +1972,25 @@ footer p {
   margin-right: 0.2em;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #CCC;
+  }
+
+  body, .st-content {
+    background-color: #252222;
+  }
+
+  .highlight a {
+    color: #fff;
+    border-color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #CCC;
+  }
+}
 /*
     ===========================
     CDN Imports

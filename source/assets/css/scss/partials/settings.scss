@@ -1,3 +1,15 @@
+:root {
+	--red: #E4503E;
+  --text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #CCC;
+	}
+}
+
+
 //
 //  Serif and sans-serif font stacks from:
 //
@@ -19,6 +31,7 @@
 //
 // Serif font-stacks
 //
+
 $garamond-font-stack: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
 $lucida-bright-font-stack: "Lucida Bright", Georgia, serif !default;
 $palatino-font-stack: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !default;
@@ -86,7 +99,7 @@ $fontColor: $blackLighter !default;
 $altColor: $gray !default;
 // Link Palettes
 // -------------------------
-$linkColor: $clr-1 !default;
+$linkColor: #E4503E !default;
 $linkHover: darken($linkColor, 10%) !default;
 $linkVisited: darken($linkHover, 5%) !default;
 $linkFocus: $linkHover !default;

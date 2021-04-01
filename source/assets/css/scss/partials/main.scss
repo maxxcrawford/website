@@ -1,3 +1,17 @@
+:root {
+	--red: #E4503E;
+  --text: #444;
+}
+
+$text: #444;
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #CCC;
+	}
+	$text: #CCC;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -9,21 +23,21 @@ html {
 }
 
 body {
-	background: $white;
+	background-color: $white;
 	position: relative;
 	padding: 0;
 	margin: 0;
 	// font-family: $biorhyme-reg;
 	font-family: $roboto-slab;
-	color: $clr-2;
+	color: var(--text);
 	line-height: 1.5em;
 }
 
 a {
-	color: $clr-1;
+	color: var(--red);
 
 	&:hover {
-		color: $clr-2;
+		color: var(--text);
 	}
 }
 
@@ -224,8 +238,8 @@ main section {
 	position: relative;
 	z-index: 2;
 	text-decoration: none;
-	border: 1px solid $clr-2;
-	color: $clr-2;
+	border: 1px solid var(--text);
+	color: var(--text);
 	transition: all .2s ease-out;
 	padding: 4px 16px;
 	display: inline-block;
@@ -235,8 +249,8 @@ main section {
 	margin-bottom: 0.75em;
 
 	&:hover {
-		border-color: $clr-1;
-		background: $clr-1;
+		border-color: var(--red);
+		background: var(--red);
 		color: $white;
 		// transform: scale(1.05);
 	}
@@ -291,17 +305,15 @@ main section {
 	a {
 		display: inline-block;
 		text-decoration: none;
-		color: lighten($clr-2, 10%);
-		border-bottom: 3px solid lighten($clr-2, 10%);
+		color: lighten($text, 10%);
+		border-bottom: 3px solid lighten($text, 10%);
 		transition: all 0.2s ease-out;
 		line-height: 1em;
 		&:hover {
-			color: $clr-1;
-			border-color: $clr-1;
+			color: var(--red);
+			border-color: var(--red);
 		}
 	}
-
-
 }
 
 p.copy {
@@ -329,17 +341,17 @@ p.copy {
 	}
 	a {
 		text-decoration: none;
-		color: $clr-2;
+		color: var(--text);
 		transition: all 0.2s ease-out;
 		i {
-			color: $clr-1;
+			color: var(--red);
 			&.black {
-				color: lighten($clr-2, 25%);
+				color: lighten($text, 25%);
 			}
 		}
 		&:hover {
-			border-color: $clr-1;
-			background: $clr-1;
+			border-color: var(--red);
+			background: var(--red);
 			color: $white;
 			i {
 				color: $white;
@@ -353,7 +365,7 @@ p.copy {
 			span, a {
 				opacity: .5;
 				cursor: wait;
-				border-color: rgba($clr-2, 0.5);
+				border-color: rgba(var(--text), 0.5);
 			}
 		}
 		// border-radius: 10px;
@@ -361,7 +373,7 @@ p.copy {
 			margin-left: 0.5em;
 		}
 		> span, a {
-			border: 0.1px solid $clr-2;
+			border: 0.1px solid var(--text);
 			display: inline-block;
 			padding: 5px 10px;
 		}
@@ -395,7 +407,7 @@ p.copy {
 		font-size: 1.75em;
 		display: inline-block;
 
-		color: $clr-2;
+		color: var(--text);
 		text-decoration: none;
 	}
 	em {

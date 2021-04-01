@@ -58,6 +58,7 @@
 				$('body').attr('class', '');
 			} else {
 				$('body').toggleClass('gif-1');
+				// location.hash = "pizza";
 				// $('body').toggleClass(randomClassGen);
 			}
 		}

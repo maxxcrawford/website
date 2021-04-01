@@ -1,9 +1,33 @@
+:root {
+	--red: #E4503E;
+  --text: #444;
+}
 
 $pizzaPink: #FDD1D1;
 $pizzaYellow: #FEF378;
 $pizzaPinkDark: #FB315D;
 
+@media (prefers-color-scheme: dark) {
+	.gif-1 {
+		--text: #444;
+		.highlight {
+	  	a {
+				color: lighten($text, 10%);
+				border-color: lighten($text, 10%);
+				&:hover {
+					color: $pizzaPinkDark;
+					border-color: $pizzaPinkDark;
+				}
+	  	}
+	  }
+	}
+	$text: #444;
+
+}
+
 .gif-1 {
+
+
 	footer,
 	header,
 	main {
@@ -57,7 +81,7 @@ $pizzaPinkDark: #FB315D;
 
 	.col {
 		a {
-			color: $clr-2;
+			color: var(--text);
 
 			i {
 				color: $pizzaPinkDark;
@@ -77,7 +101,7 @@ $pizzaPinkDark: #FB315D;
 		li {
 			a,
 			span {
-				border: 0.1px solid $clr-2;
+				border: 0.1px solid var(--text);
 			}
 		}
 	}

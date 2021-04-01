@@ -8,7 +8,7 @@
 		display: block;
 		padding: 6px;
 		width: 100%;
-		border: 1px solid $clr-2;
+		border: 1px solid var(--text);
 		border-radius: 0;
 		box-shadow: none;
 		font-family: $roboto-slab;
@@ -27,7 +27,7 @@
 		font-family: $roboto-slab;
 		box-shadow: none;
 		border-radius: 0;
-		border: 1px solid $clr-2;
+		border: 1px solid var(--text);
 		margin: 0 0 1em;
 		display: block;
 		padding: 6px;
@@ -35,9 +35,9 @@
 		outline: none;
 		line-height: 1.3em;
 	}
-	
+
 	button {
-		color: $clr-2;
+		color: var(--text);
 		transition: all 0.2s ease-out;
 		// padding: 4px 16px;
 		cursor: pointer;
@@ -50,16 +50,16 @@
 		font-family: $oswald;
 		padding: 8px 16px;
 		letter-spacing: 1px;
-		color: $clr-2;
+		color: var(--text);
 		line-height: normal;
 		text-transform: uppercase;
 		line-height: normal;
-		border: 1px solid $clr-2;
+		border: 1px solid var(--text);
 		// transition: all 0.5s ease-out;
 
 		&:hover {
-			border-color: $clr-1;
-			background: $clr-1;
+			border-color: var(--red);
+			background: var(--red);
 			color: $white;
 			// transform: scale(1.05);
 		}

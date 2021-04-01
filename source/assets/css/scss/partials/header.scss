@@ -1,6 +1,17 @@
 // Header
 // ----------------------------------------------------------------------------
 
+:root {
+	--red: #E4503E;
+  --text: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #CCC;
+	}
+}
+
 header {
 	@extend %wrapper;
 	text-align: center;
@@ -12,7 +23,7 @@ header {
 
 	.title {
 		display: block;
-		color: $clr-2;
+		color: var(--text);
 		text-decoration: none;
 		transition: color .2s ease-out;
 		@include mq-at-least(600px) {
@@ -31,18 +42,18 @@ header {
 		font-family: $oswald;
 		// padding: 8px 16px;
 		letter-spacing: 1px;
-		color: $clr-2;
+		color: var(--text);
 		line-height: normal;
 		text-transform: uppercase;
 		line-height: normal;
-		// border-bottom: 1px solid $clr-2;
+		// border-bottom: 1px solid var(--text);
 		transition: all .5s ease-out;
 		// margin: 0 0 1em;
 		// position:
 		span {
 			padding: 4px 12px;
-			outline: 1px solid $clr-2;
-			color: $clr-2;
+			outline: 1px solid var(--text);
+			color: var(--text);
 			display: inline-block;
 		}
 		i {
@@ -53,7 +64,7 @@ header {
 
 		&.active {
 			border-bottom: none;
-			background: $clr-2;
+			background: var(--text);
 			color: $white;
 		}
 		@include mq-at-least(768px) {
@@ -89,7 +100,7 @@ header {
 
 
 	nav {
-		border-top: 1px solid $clr-2;
+		border-top: 1px solid var(--text);
 		font-family: $oswald;
 		text-transform: uppercase;
 		padding: 0;
@@ -119,9 +130,9 @@ header {
 		}
 
 		ul {
-			border-left: 1px solid $clr-2;
-			border-right: 1px solid $clr-2;
-			border-bottom: 1px solid $clr-2;
+			border-left: 1px solid var(--text);
+			border-right: 1px solid var(--text);
+			border-bottom: 1px solid var(--text);
 			list-style: none;
 			margin: 0;
 			padding: 1em 1px .5em;
@@ -136,7 +147,7 @@ header {
 			@include mq-at-least(768px) {
 				border-left: none;
 				border-right: none;
-				border-bottom: 1px solid $clr-2;
+				border-bottom: 1px solid var(--text);
 				padding: 0 1px 16px;
 				display: block;
 			}
@@ -169,7 +180,7 @@ header {
 			position: relative;
 			z-index: 2;
 			text-decoration: none;
-			color: $clr-2;
+			color: var(--text);
 			transition: background .2s ease-out, color .2s ease-out, outline .2s ease-out;
 			border-bottom: 1px solid transparent;
 			padding: 4px 16px;
@@ -177,19 +188,19 @@ header {
 			letter-spacing: 1px;
 
 			&:hover {
-				background: $clr-1;
+				background: var(--red);
 				color: $white;
 				// transform: scale(1.05);
 			}
 
 			&.active {
-				outline: 1px solid $clr-2;
-				color: $clr-2;
+				outline: 1px solid var(--text);
+				color: var(--text);
 
 				&:hover {
-					background: $clr-1;
+					background: var(--red);
 					color: $white;
-					outline-color: $clr-1;
+					outline-color: var(--red);
 				}
 			}
 		}
@@ -213,14 +224,14 @@ nav.mobile {
 	}
 
 	a {
-		color: $clr-2;
+		color: var(--text);
 		padding: 10px 18px;
 		// color: $white;
 		font-family: $oswald;
 		text-transform: uppercase;
 		display: inline-block;
 		// padding: 16px;
-		// border-bottom: 1px solid rgba($clr-2, 0.2);
+		// border-bottom: 1px solid rgba(var(--text), 0.2);
 		font-size: 20px;
 		letter-spacing: 1px;
 
@@ -230,22 +241,22 @@ nav.mobile {
 
 		&.active:hover,
 		&:hover {
-			background: $clr-1;
+			background: var(--red);
 			color: $white;
-			outline-color: $clr-1;
+			outline-color: var(--red);
 		}
 
 		&.active {
-			outline: 1px solid $clr-2;
-			color: $clr-2;
+			outline: 1px solid var(--text);
+			color: var(--text);
 		}
 
 
 
 		// &:hover {
-		// 	background: $clr-1;
+		// 	background: var(--red);
 		// 	color: $white;
-		// 	outline-color: $clr-1;
+		// 	outline-color: var(--red);
 		// }
 	}
 }
@@ -312,7 +323,7 @@ html {
 	visibility: hidden;
 	width: 250px;
 	height: 100%;
-	// background: $clr-1;
+	// background: var(--red);
 	-webkit-transition: all .5s;
 	transition: all .5s;
 }

@@ -5,7 +5,7 @@ footer {
 	@extend %wrapper;
 
 	nav {
-		border-top: 1px solid $clr-2;
+		border-top: 1px solid var(--text);
 		font-family: $din;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -81,7 +81,7 @@ footer {
 			position: relative;
 			z-index: 2;
 			text-decoration: none;
-			color: $clr-2;
+			color: var(--text);
 			transition: all .2s ease-out;
 			border-bottom: 1px solid transparent;
 			padding: 4px 0;
@@ -90,21 +90,21 @@ footer {
 			font-size: 24px;
 
 			&:hover {
-				color: $clr-1;
+				color: var(--red);
 				transform: scale(1.1);
-				// background: $clr-1;
+				// background: var(--red);
 				// color: $white;
 			}
 
 			&.active {
-				// outline: 1px solid $clr-2;
-				color: $clr-2;
+				// outline: 1px solid var(--text);
+				color: var(--text);
 
 				&:hover {
-					background: $clr-1;
-					// background: $clr-1;
+					background: var(--red);
+					// background: var(--red);
 					// color: $white;
-					// outline-color: $clr-1;
+					// outline-color: var(--red);
 				}
 			}
 		}
@@ -117,9 +117,9 @@ footer {
 		text-decoration: none;
 		transition: color 0.2s ease-out;
 		&:hover {
-			color: $clr-1;
+			color: var(--red);
 			svg {
-				fill: $clr-1;
+				fill: var(--red);
 			}
 		}
 		svg {
