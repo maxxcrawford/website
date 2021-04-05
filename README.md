@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c601cceb-8179-4a84-908c-f0526c50ca70/deploy-status)](https://app.netlify.com/sites/maxxcrawford/deploys)
+
 # Personal Website for Maxx Crawford
 
 This is the repo for my personal website.
