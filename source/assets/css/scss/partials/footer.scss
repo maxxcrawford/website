@@ -18,7 +18,7 @@ footer {
 			padding: 0;
 			text-align: center;
 			@extend %clearfix;
-			@include mq-at-least(500px) {
+			@include mq-at-least(600px) {
 				text-align: right;
 				padding: 0 0 .25em;
 			}
@@ -51,7 +51,7 @@ footer {
 					}
 				}
 			}
-			@include mq-at-least(500px) {
+			@include mq-at-least(600px) {
 				&.footer-toggle {
 					float: left;
 					display: inline-block;
@@ -113,7 +113,7 @@ footer {
 	.nolink {
 		display: inline-block;
 		width: auto;
-		color: #CCCCCC;
+		color: rgb(171, 171, 171);
 		text-decoration: none;
 		transition: color 0.2s ease-out;
 		&:hover {
@@ -124,7 +124,7 @@ footer {
 		}
 		svg {
 			transition: fill 0.2s ease-out;
-			fill: #CCCCCC;
+			fill: rgb(171, 171, 171);
 			display: inline-block;
 			width: auto;
 			height: 0.8rem;
@@ -137,8 +137,12 @@ footer {
 		margin: 0;
 		padding: 1em 0;
 		text-align: center;
-		color: #CCC;
-		@include mq-at-least(500px) {
+		color: rgb(171, 171, 171);
+		strong {
+			color: black;
+			display: block;
+		}
+		@include mq-at-least(600px) {
 			text-align: right;
 			padding: 0 0 1em;
 		}

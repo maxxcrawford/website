@@ -1695,7 +1695,7 @@ footer nav ul {
   padding: 0;
   text-align: center;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   footer nav ul {
     text-align: right;
     padding: 0 0 0.25em;
@@ -1723,7 +1723,7 @@ footer nav li.footer-toggle a {
     font-size: 1.3rem;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   footer nav li.footer-toggle {
     float: left;
     display: inline-block;
@@ -1770,7 +1770,7 @@ footer nav a.active:hover {
 footer .nolink {
   display: inline-block;
   width: auto;
-  color: #CCCCCC;
+  color: #ababab;
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -1782,7 +1782,7 @@ footer .nolink:hover svg {
 }
 footer .nolink svg {
   transition: fill 0.2s ease-out;
-  fill: #CCCCCC;
+  fill: #ababab;
   display: inline-block;
   width: auto;
   height: 0.8rem;
@@ -1793,9 +1793,13 @@ footer p {
   margin: 0;
   padding: 1em 0;
   text-align: center;
-  color: #CCC;
+  color: #ababab;
 }
-@media screen and (min-width: 500px) {
+footer p strong {
+  color: black;
+  display: block;
+}
+@media screen and (min-width: 600px) {
   footer p {
     text-align: right;
     padding: 0 0 1em;
@@ -1839,10 +1843,31 @@ footer p {
 .gif-1 .u-color-red {
   color: #FB315D;
 }
-.gif-1 header nav a:hover {
+.gif-1 a {
+  color: #FB315D;
+}
+.gif-1 header nav a:hover, .gif-1 .cards .tags ul li {
   background: #FB315D;
 }
-.gif-1 footer p {
+.gif-1 .btn {
+  border-color: #FB315D;
+}
+.gif-1 .form-contact button:hover {
+  background-color: #FB315D;
+}
+.gif-1 .btn:hover {
+  border-color: #FB315D;
+  background-color: #FB315D;
+}
+.gif-1 .cards .card a {
+  outline-color: #FB315D;
+  color: #FB315D;
+}
+.gif-1 .cards .card a:hover {
+  color: #fff;
+  background-color: #FB315D;
+}
+.gif-1 footer p, .gif-1 footer nav a, .gif-1 footer p strong {
   color: #FB315D;
 }
 .gif-1 .footer-toggle a, .gif-1 .nolink {

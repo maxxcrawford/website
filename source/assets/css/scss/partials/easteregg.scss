@@ -48,11 +48,37 @@ $pizzaPinkDark: #FB315D;
 		color: $pizzaPinkDark;
 	}
 
-	header nav a:hover {
+	a {
+		color: $pizzaPinkDark;
+	}
+
+	header nav a:hover, .cards .tags ul li {
 		background: $pizzaPinkDark;
 	}
 
-	footer p {
+	.btn {
+		border-color: $pizzaPinkDark;
+	}
+
+	.form-contact button:hover {
+		background-color: $pizzaPinkDark;
+	}
+
+	.btn:hover {
+		border-color: $pizzaPinkDark;
+		background-color: $pizzaPinkDark;
+	}
+
+	.cards .card a {
+		outline-color: $pizzaPinkDark;
+		color: $pizzaPinkDark;
+		&:hover {
+			color: $white;
+			background-color: $pizzaPinkDark;
+		}
+	}
+
+	footer p, footer nav a, footer p strong {
 		color: $pizzaPinkDark;
 	}
 	cursor: url("../img/pizza-cursor.gif") 0 0, auto;
