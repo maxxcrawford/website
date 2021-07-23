@@ -812,6 +812,10 @@ footer nav ul:after, footer nav:after, header nav:after {
   display: inline-block;
 }
 
+.display-none {
+  display: none;
+}
+
 @font-face {
   font-family: "Redacted";
   src: url("fonts/redacted-regular.eot");
