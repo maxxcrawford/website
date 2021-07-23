@@ -54,7 +54,10 @@
 								<h1>Contact</h1>
 								<p>Please use the following form to get started!</p>
 
-								<form id="contactForm" class="form-contact" netlify>
+								<form id="contactForm" class="form-contact" method="POST"  netlify-honeypot="bot-name" data-netlify="true">
+									<div class="display-none">
+										<input type="bot-name">
+									</div>
 									<label for="name">Name</label>
 									<input class="formName" required type="text" placeholder="" name="name" value="">
 									<label for="email">Email</label>
