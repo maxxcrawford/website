@@ -269,9 +269,14 @@ html {
 	height: 100%;
 }
 
+header, main, footer {
+	background-color: $white;;
+}
+
 .st-content {
 	overflow-y: scroll;
-	background: $white;
+	background: url(../img/dots.svg) center center repeat $white;
+	// background: $white;
 	-webkit-overflow-scrolling: touch;
 }
 
