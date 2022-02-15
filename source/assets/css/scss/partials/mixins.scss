@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin mq-at-least($device-width) {
      @media screen and (min-width: $device-width){
         @content;
@@ -12,7 +14,7 @@
 // Remove units from digits (px, em, rem, ch, etc...)
 // ---------------------------------------------------------------------------
 @function strip-unit($number) {
-    @return $number / ($number * 0 + 1);
+    @return math.div( $number,  ($number * 0 + 1));
 }
 
 // INCREASE value from min to max between min & max dimensions
