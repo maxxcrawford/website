@@ -275,8 +275,8 @@ header, main, footer {
 
 .st-content {
 	overflow-y: scroll;
-	background: url(../img/dots.svg) center center repeat $white;
-	// background: $white;
+	// background: url(../img/dots.svg) center center repeat $white;
+	background: $white;
 	-webkit-overflow-scrolling: touch;
 }
 

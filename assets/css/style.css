@@ -1460,7 +1460,7 @@ header, main, footer {
 
 .st-content {
   overflow-y: scroll;
-  background: url(../img/dots.svg) center center repeat #fff;
+  background: #fff;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1615,7 +1615,7 @@ header, main, footer {
   display: flex;
 }
 .logo a {
-  width: calc( 100% - 120px );
+  width: calc(100% - 120px);
 }
 .logo .toggle {
   width: 120px;
