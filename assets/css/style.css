@@ -14,14 +14,10 @@
 /* Document
    ========================================================================== */
 html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
 }
 
 /* Sections
@@ -62,8 +58,7 @@ h1 {
  */
 figcaption,
 figure,
-main {
-  /* 1 */
+main { /* 1 */
   display: block;
 }
 
@@ -79,12 +74,9 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -92,10 +84,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -105,10 +95,8 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
 }
 
 /**
@@ -125,12 +113,9 @@ a:hover {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -156,10 +141,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -247,14 +230,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -262,8 +241,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -272,8 +250,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -286,8 +263,7 @@ button,
 html [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
-  /* 2 */
+  -webkit-appearance: button; /* 2 */
 }
 
 /**
@@ -327,18 +303,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -346,10 +316,8 @@ legend {
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -365,10 +333,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -384,10 +350,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -403,10 +367,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -823,19 +785,15 @@ footer nav ul:after, footer nav:after, header nav:after {
 }
 @font-face {
   font-family: "D-DIN Condensed";
-  src: url("fonts/D-DINCondensed.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/D-DINCondensed.eot?#iefix") format("embedded-opentype"), url("fonts/D-DINCondensed.woff") format("woff"), url("fonts/D-DINCondensed.ttf") format("truetype"), url("fonts/D-DINCondensed.svg#1d957c29f2426a1693769174fedba9e7") format("svg");
-  /* Legacy iOS */
+  src: url("fonts/D-DINCondensed.eot"); /* IE9 Compat Modes */
+  src: url("fonts/D-DINCondensed.eot?#iefix") format("embedded-opentype"), url("fonts/D-DINCondensed.woff") format("woff"), url("fonts/D-DINCondensed.ttf") format("truetype"), url("fonts/D-DINCondensed.svg#1d957c29f2426a1693769174fedba9e7") format("svg"); /* Legacy iOS */
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "D-DIN Condensed";
-  src: url("fonts/D-DINCondensed-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("fonts/D-DINCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/D-DINCondensed-Bold.woff") format("woff"), url("fonts/D-DINCondensed-Bold.ttf") format("truetype"), url("fonts/D-DINCondensed-Bold.svg#efc7b2e6a434d6b30356a19f1082174e") format("svg");
-  /* Legacy iOS */
+  src: url("fonts/D-DINCondensed-Bold.eot"); /* IE9 Compat Modes */
+  src: url("fonts/D-DINCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/D-DINCondensed-Bold.woff") format("woff"), url("fonts/D-DINCondensed-Bold.ttf") format("truetype"), url("fonts/D-DINCondensed-Bold.svg#efc7b2e6a434d6b30356a19f1082174e") format("svg"); /* Legacy iOS */
   font-style: normal;
   font-weight: 700;
 }
@@ -1778,7 +1736,7 @@ footer nav a.active:hover {
 footer .nolink {
   display: inline-block;
   width: auto;
-  color: #ababab;
+  color: rgb(171, 171, 171);
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -1790,7 +1748,7 @@ footer .nolink:hover svg {
 }
 footer .nolink svg {
   transition: fill 0.2s ease-out;
-  fill: #ababab;
+  fill: rgb(171, 171, 171);
   display: inline-block;
   width: auto;
   height: 0.8rem;
@@ -1801,7 +1759,7 @@ footer p {
   margin: 0;
   padding: 1em 0;
   text-align: center;
-  color: #ababab;
+  color: rgb(171, 171, 171);
 }
 footer p strong {
   color: black;
@@ -2009,11 +1967,9 @@ footer p strong {
   :root {
     --text: #CCC;
   }
-
   body, .st-content {
     background-color: #252222;
   }
-
   .highlight a {
     color: #fff;
     border-color: #fff;
@@ -2024,6 +1980,31 @@ footer p strong {
     --text: #CCC;
   }
 }
+.cheat-mode .cheat-mode-activated {
+  display: block;
+}
+
+.cheat-mode-activated {
+  display: none;
+  position: fixed;
+  background-color: black;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+}
+.cheat-mode-activated.animation-hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s ease-in;
+}
+.cheat-mode-activated img {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
 /*
     ===========================
     CDN Imports

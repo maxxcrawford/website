@@ -1,0 +1,33 @@
+.cheat-mode {
+
+	.cheat-mode-activated {
+		display: block;
+	}
+
+}
+
+.cheat-mode-activated {
+	display: none;
+	position: fixed;
+	background-color: black;
+	z-index: 20;
+	// width: 50vh
+	// height: 50vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 4rem;
+	
+	&.animation-hide {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 1s, opacity 1s ease-in;
+	}
+
+	img {
+		width: 400px;
+		// max-width: 400px;
+		margin: 0 auto;
+		display: block;
+	}
+}

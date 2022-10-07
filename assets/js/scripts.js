@@ -119,4 +119,46 @@
 	console.log("Thanks for checking out my site! 🍕");
 
 	// ...
+
+	var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+	
+	var current = 0;
+
+
+	var keyHandler = function (event) {
+
+		// If the key isn't in the pattern, or isn't the current key in the pattern, reset
+		if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+			current = 0;
+			return;
+		}
+	
+		// Update how much of the pattern is complete
+		current++;
+	
+		// If complete, alert and reset
+		if (pattern.length === current) {
+			current = 0;
+			document.body.classList.add("cheat-mode");
+
+			const cheatModeWindow = document.querySelector(".cheat-mode-activated");
+
+			setTimeout( ()=> {
+				cheatModeWindow.classList.add("animation-hide");
+			}, 2000);
+
+			setTimeout( ()=> {
+				cheatModeWindow.classList.remove("animation-hide");
+				document.body.classList.remove("cheat-mode");
+			}, 5000);
+
+			// window.alert('You found it!');
+		}
+	
+	};
+
+	// Listen for keydown events
+	document.addEventListener('keydown', keyHandler, false);
+	
+
 })();
