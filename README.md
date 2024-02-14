@@ -6,7 +6,7 @@ This is the repo for my personal website.
 
 ### Additional links: 
 
-- [Resume/CV (PDF)](https://github.com/maxxcrawford/website/raw/master/MaxxCrawford_Resume.pdf)
+- [Resume/CV (PDF)](https://github.com/maxxcrawford/website/raw/master/MaxxCrawford_Resume_2024.pdf)
 - [Email](mailto:hello@maxxcrawford.com)
 - [Dribbble](https://dribbble.com/woodenwarship)
 - [Instagram](https://www.instagram.com/woodenwarship/)
