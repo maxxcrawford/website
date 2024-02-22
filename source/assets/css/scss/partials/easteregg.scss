@@ -1,6 +1,6 @@
 :root {
 	--red: #E4503E;
-  --text: #444;
+	--text: #444;
 }
 
 $pizzaPink: #FDD1D1;
@@ -10,19 +10,22 @@ $pizzaPinkDark: #FB315D;
 @media (prefers-color-scheme: dark) {
 	.gif-1 {
 		--text: #444;
+
 		.highlight {
-	  	a {
+			a {
 				color: lighten($text, 10%);
 				border-color: lighten($text, 10%);
+
 				&:hover {
 					color: $pizzaPinkDark;
 					border-color: $pizzaPinkDark;
 				}
-	  	}
-	  }
+			}
+		}
 	}
-	$text: #444;
 
+	$text: #444;
+	
 }
 
 .gif-1 {
@@ -52,7 +55,8 @@ $pizzaPinkDark: #FB315D;
 		color: $pizzaPinkDark;
 	}
 
-	header nav a:hover, .cards .tags ul li {
+	header nav a:hover,
+	.cards .tags ul li {
 		background: $pizzaPinkDark;
 	}
 
@@ -72,18 +76,33 @@ $pizzaPinkDark: #FB315D;
 	.cards .card a {
 		outline-color: $pizzaPinkDark;
 		color: $pizzaPinkDark;
+
 		&:hover {
 			color: $white;
 			background-color: $pizzaPinkDark;
 		}
 	}
 
-	footer p, footer nav a, footer p strong {
+	footer p,
+	footer nav a,
+	footer p strong {
 		color: $pizzaPinkDark;
 	}
-	cursor: url("../img/pizza-cursor.gif") 0 0, auto;
 
-	.footer-toggle a, .nolink {
+	.form-contact {
+
+		input,
+		textarea {
+			border: 1px solid var(--text);
+			color: #444;
+		}
+	}
+
+	cursor: url("../img/pizza-cursor.gif") 0 0,
+	auto;
+
+	.footer-toggle a,
+	.nolink {
 		color: $pizzaPinkDark;
 	}
 
@@ -100,9 +119,9 @@ $pizzaPinkDark: #FB315D;
 	}
 
 	@keyframes animation {
-   100%{
-    	background-position:0px 3000px;
-  	}
+		100% {
+			background-position: 0px 3000px;
+		}
 	}
 
 	.col {
@@ -125,11 +144,11 @@ $pizzaPinkDark: #FB315D;
 		}
 
 		li {
+
 			a,
 			span {
 				border: 0.1px solid var(--text);
 			}
 		}
 	}
-
 }

@@ -1,29 +1,40 @@
 $text: #444;
 
 @media (prefers-color-scheme: dark) {
-  :root {
-		--text: #CCC;
-	}
-	$text: #CCC;
-
-  body, .st-content {
-    background-color: #252222;
-	}
-
-  .highlight {
-  	a {
-  		color: $white;
-  		border-color: $white;
-  	}
-  }
-
-}
-
-
-
-@media (prefers-color-scheme: dark) {
 	:root {
 		--text: #CCC;
 	}
+
 	$text: #CCC;
+
+	body,
+	.st-content {
+		background-color: #252222;
+	}
+
+	.highlight {
+		a {
+			color: $white;
+			border-color: $white;
+		}
+	}
+
+	main,
+	header,
+	footer {
+		background-color: transparent;
+	}
+
+	footer p strong {
+		color: #CCC;
+	}
+
+	.form-contact {
+		input,
+		textarea {
+			border: 1px solid var(--text);
+			background-color: transparent;
+			color: $text;
+		}
+	}
 }
