@@ -298,11 +298,11 @@ main section {
 }
 
 .highlight {
-	@include fluid-type(font-size, 400px, 1200px, 40px, 70px);
+	
 	// font-family: $din;
 	line-height: 1.2em;
 	margin: 0;
-	padding: 0;
+	// padding: 0;
 	font-weight: 300;
 	text-transform: none;
 	.u-color-red {
@@ -322,6 +322,7 @@ main section {
 			border-color: var(--red);
 		}
 	}
+	@include fluid-type(font-size, 400px, 1200px, 40px, 70px);
 }
 
 p.copy {

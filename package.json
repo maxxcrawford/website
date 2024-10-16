@@ -4,11 +4,16 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/c601cceb-8179-4a84-908c-f0526c50ca70/deploy-status)](https://app.netlify.com/sites/maxxcrawford/deploys)",
   "main": "index.js",
   "scripts": {
+    "scss:build": "sass source/assets/css/scss/style.scss:../../../assets/css/style.css",
+    "scss:watch": "sass --watch  source/assets/css/scss/style.scss:../../../assets/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maxx Crawford",
   "license": "MIT",
   "volta": {
     "node": "20.11.1"
+  },
+  "dependencies": {
+    "sass": "^1.79.5"
   }
 }

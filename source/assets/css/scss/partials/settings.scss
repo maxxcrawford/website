@@ -100,7 +100,10 @@ $altColor: $gray !default;
 // Link Palettes
 // -------------------------
 $linkColor: #E4503E !default;
-$linkHover: darken($linkColor, 10%) !default;
-$linkVisited: darken($linkHover, 5%) !default;
+// $linkHover: darken($linkColor, 10%) !default;
+$linkHover: #ce402d;
+// $linkVisited: darken($linkHover, 5%) !default;
+$linkVisited:#b92d1a;
 $linkFocus: $linkHover !default;
-$linkActive: lighten(adjust-hue($linkColor, 75deg), 10%) !default;
+// $linkActive: lighten(adjust-hue($linkColor, 75deg), 10%) !default;
+$linkActive: #ef6250;
