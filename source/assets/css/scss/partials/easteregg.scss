@@ -13,9 +13,10 @@ $pizzaPinkDark: #FB315D;
 
 		.highlight {
 			a {
-				// color: lighten($text, 10%);
-				color: color.adjust($text, $lightness: 10%);
-				border-color: color.adjust($text, $lightness: 10%);
+				color: lighten($text, 10%);
+				border-color: lighten($text, 10%);
+				// color: color.adjust($text, $lightness: 10%);
+				// border-color: color.adjust($text, $lightness: 10%);
 
 				&:hover {
 					color: $pizzaPinkDark;

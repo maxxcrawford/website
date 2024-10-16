@@ -1,5 +1,5 @@
 :root {
-	--red: #E4503E;
+  --red: #D63924; 
   --text: #444;
 }
 
@@ -36,7 +36,8 @@ body {
 }
 
 a {
-	color: var(--red);
+	color: #D63924;
+	// color: var(--red);
 
 	&:hover {
 		color: var(--text);
@@ -262,11 +263,14 @@ main section {
 	border: 1px solid #AAA;
 	color: #AAA;
 	// display: block;
+	background-color: transparent;	
+	border: none;
 	display: none;
 	margin: 32px auto 0;
 	max-width: 180px;
-	text-align: center;
+	text-align: center; 
 	font-size: 12px;
+	appearance: none; 
 }
 
 .mobile-only {

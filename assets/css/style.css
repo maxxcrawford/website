@@ -748,7 +748,7 @@ template {
     ===========================
 */
 :root {
-  --red: #E4503E;
+  --red: #D63924;
   --text: #444;
 }
 
@@ -803,7 +803,7 @@ footer nav ul:after, footer nav:after, header nav:after {
     ===========================
 */
 :root {
-  --red: #E4503E;
+  --red: #D63924;
   --text: #444;
 }
 
@@ -833,7 +833,7 @@ body {
 }
 
 a {
-  color: var(--red);
+  color: #D63924;
 }
 a:hover {
   color: var(--text);
@@ -1012,11 +1012,14 @@ main section h2 {
 .backToTop {
   border: 1px solid #AAA;
   color: #AAA;
+  background-color: transparent;
+  border: none;
   display: none;
   margin: 32px auto 0;
   max-width: 180px;
   text-align: center;
   font-size: 12px;
+  appearance: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1048,22 +1051,8 @@ main section h2 {
 .highlight {
   line-height: 1.2em;
   margin: 0;
-  padding: 0;
   font-weight: 300;
   text-transform: none;
-}
-.highlight {
-  font-size: 40px;
-}
-@media screen and (min-width: 400px) {
-  .highlight {
-    font-size: calc(40px + 30 * (100vw - 400px) / 800);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .highlight {
-    font-size: 70px;
-  }
 }
 .highlight .u-color-red {
   font-style: italic;
@@ -1081,6 +1070,19 @@ main section h2 {
 .highlight a:hover {
   color: var(--red);
   border-color: var(--red);
+}
+.highlight {
+  font-size: 40px;
+}
+@media screen and (min-width: 400px) {
+  .highlight {
+    font-size: calc(40px + 30 * (100vw - 400px) / 800);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .highlight {
+    font-size: 70px;
+  }
 }
 
 p.copy {
@@ -1188,7 +1190,7 @@ p.copy {
 }
 
 :root {
-  --red: #E4503E;
+  --red: #D63924;
   --text: #444;
 }
 
@@ -1538,6 +1540,9 @@ header, main, footer {
     z-index: 10;
     cursor: pointer;
   }
+  nav.desktop button {
+    display: inline-block;
+  }
   nav.desktop {
     top: 45px;
   }
@@ -1550,11 +1555,6 @@ header, main, footer {
 @media screen and (max-width: 767px) and (min-width: 768px) {
   nav.desktop {
     top: 60px;
-  }
-}
-@media screen and (max-width: 767px) {
-  nav.desktop button {
-    display: inline-block;
   }
 }
 @media screen and (max-width: 599px) {
@@ -1688,12 +1688,16 @@ footer nav li.footer-toggle {
   display: block;
   margin-top: 1em;
 }
-footer nav li.footer-toggle a {
+footer nav li.footer-toggle button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  appearance: none;
   color: #888;
   font-size: 1.2rem;
 }
 @media screen and (min-width: 400px) {
-  footer nav li.footer-toggle a {
+  footer nav li.footer-toggle button {
     font-size: 1.3rem;
   }
 }
@@ -1704,7 +1708,7 @@ footer nav li.footer-toggle a {
     margin-right: 0;
     margin-top: 0;
   }
-  footer nav li.footer-toggle a {
+  footer nav li.footer-toggle button {
     font-size: 1.5rem;
   }
 }
@@ -1744,7 +1748,7 @@ footer nav a.active:hover {
 footer .nolink {
   display: inline-block;
   width: auto;
-  color: rgb(171, 171, 171);
+  color: #666;
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -1767,7 +1771,7 @@ footer p {
   margin: 0;
   padding: 1em 0;
   text-align: center;
-  color: rgb(171, 171, 171);
+  color: #666;
 }
 footer p strong {
   color: black;
