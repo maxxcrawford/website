@@ -28,9 +28,11 @@ body {
 	padding: 0;
 	margin: 0;
 	// font-family: $biorhyme-reg;
-	font-family: $roboto-slab;
+	// font-family: $roboto-slab;
+	font-family: $instrument;
 	color: var(--text);
 	line-height: 1.5em;
+	// font-size: 22px;
 }
 
 a {
@@ -56,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $biorhyme;
+	font-family: $instrument;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -297,11 +299,16 @@ main section {
 
 .highlight {
 	@include fluid-type(font-size, 400px, 1200px, 40px, 70px);
-	font-family: $din;
+	// font-family: $din;
 	line-height: 1.2em;
 	margin: 0;
 	padding: 0;
-	text-transform: uppercase;
+	font-weight: 300;
+	text-transform: none;
+	.u-color-red {
+		font-style: italic;
+		font-weight: 500;
+	}
 	a {
 		display: inline-block;
 		text-decoration: none;
@@ -309,6 +316,7 @@ main section {
 		border-bottom: 3px solid lighten($text, 10%);
 		transition: all 0.2s ease-out;
 		line-height: 1em;
+		font-style: italic;
 		&:hover {
 			color: var(--red);
 			border-color: var(--red);
@@ -317,7 +325,9 @@ main section {
 }
 
 p.copy {
-	max-width: 800px;
+	max-width: 768px;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 
 .row {
@@ -329,7 +339,9 @@ p.copy {
 .col {
 	padding: 0 0 2em;
 	strong {
-		font-family: $din;
+		font-family: $instrument;
+		font-style: italic;
+		// font-family: $din;
 		text-transform: uppercase;
 		font-size: 1.75em;
 		display: inline-block;

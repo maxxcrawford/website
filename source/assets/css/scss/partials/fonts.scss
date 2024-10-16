@@ -4,6 +4,7 @@ $biorhyme: 'BioRhyme Expanded', $bodoni-mt-font-stack, serif;
 $oswald: 'Oswald', $helvetica-font-stack, sans-serif;
 $redacted: "Redacted";
 $din: "D-DIN Condensed", $helvetica-font-stack, sans-serif;
+$instrument: "Instrument Serif", $palatino-font-stack, serif;
 
 @font-face {
     font-family: "Redacted";
@@ -37,3 +38,15 @@ $din: "D-DIN Condensed", $helvetica-font-stack, sans-serif;
   font-style:   normal;
   font-weight:  700;
 }
+
+// .instrument-serif-regular {
+//      font-family: "Instrument Serif", serif;
+//      font-weight: 400;
+//      font-style: normal;
+// }
+
+// .instrument-serif-regular-italic {
+//      font-family: "Instrument Serif", serif;
+//      font-weight: 400;
+//      font-style: italic;
+// }

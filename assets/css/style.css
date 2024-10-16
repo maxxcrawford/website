@@ -827,7 +827,7 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "Roboto Slab", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
+  font-family: "Instrument Serif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, serif;
   color: var(--text);
   line-height: 1.5em;
 }
@@ -856,7 +856,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "BioRhyme Expanded", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
+  font-family: "Instrument Serif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -1046,11 +1046,11 @@ main section h2 {
 }
 
 .highlight {
-  font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   line-height: 1.2em;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
+  font-weight: 300;
+  text-transform: none;
 }
 .highlight {
   font-size: 40px;
@@ -1065,6 +1065,10 @@ main section h2 {
     font-size: 70px;
   }
 }
+.highlight .u-color-red {
+  font-style: italic;
+  font-weight: 500;
+}
 .highlight a {
   display: inline-block;
   text-decoration: none;
@@ -1072,6 +1076,7 @@ main section h2 {
   border-bottom: 3px solid #5e5e5e;
   transition: all 0.2s ease-out;
   line-height: 1em;
+  font-style: italic;
 }
 .highlight a:hover {
   color: var(--red);
@@ -1079,14 +1084,17 @@ main section h2 {
 }
 
 p.copy {
-  max-width: 800px;
+  max-width: 768px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .col {
   padding: 0 0 2em;
 }
 .col strong {
-  font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  font-family: "Instrument Serif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, serif;
+  font-style: italic;
   text-transform: uppercase;
   font-size: 1.75em;
   display: inline-block;
@@ -1216,7 +1224,7 @@ header button.toggle {
   border: none;
   display: block;
   width: 100%;
-  font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  font-family: "Instrument Serif", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif, serif;
   letter-spacing: 1px;
   color: var(--text);
   line-height: normal;
@@ -1247,37 +1255,38 @@ header button.toggle.active {
 }
 header h1 {
   transition: font-size 0.2s ease-out;
-  font-family: "BioRhyme Expanded", "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif, serif;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: left;
-  padding: 16px 0;
+  padding: 1rem 0;
   margin: 0;
-  line-height: 1em;
+  line-height: 1rem;
   font-weight: 300;
+  display: block;
   display: inline-block;
 }
 header h1 {
-  font-size: 16px;
+  font-size: 24px;
 }
 @media screen and (min-width: 320px) {
   header h1 {
-    font-size: calc(16px + 48 * (100vw - 320px) / 640);
+    font-size: calc(24px + 48 * (100vw - 320px) / 640);
   }
 }
 @media screen and (min-width: 960px) {
   header h1 {
-    font-size: 64px;
+    font-size: 72px;
   }
 }
 @media screen and (min-width: 600px) {
   header h1 {
-    padding: 48px 0 16px;
+    padding: 3rem 0 1rem;
     display: block;
+    margin: 0 0 1rem;
   }
 }
 header nav {
   border-top: 1px solid var(--text);
-  font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0;
 }
@@ -1363,6 +1372,7 @@ header nav a:hover {
 header nav a.active {
   outline: 1px solid var(--text);
   color: var(--text);
+  font-style: italic;
 }
 header nav a.active:hover {
   background: var(--red);
@@ -1385,7 +1395,6 @@ nav.mobile li {
 nav.mobile a {
   color: var(--text);
   padding: 10px 18px;
-  font-family: "Oswald", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   text-transform: uppercase;
   display: inline-block;
   font-size: 20px;
@@ -1398,10 +1407,12 @@ nav.mobile a.active:hover, nav.mobile a:hover {
   background: var(--red);
   color: #fff;
   outline-color: var(--red);
+  font-weight: bold;
 }
 nav.mobile a.active {
   outline: 1px solid var(--text);
   color: var(--text);
+  font-weight: bold;
 }
 
 .st-container,
@@ -1572,10 +1583,8 @@ header, main, footer {
 .logo {
   display: flex;
 }
-.logo a {
-  width: calc(100% - 120px);
-}
 .logo .toggle {
+  margin-left: auto;
   width: 120px;
   display: block;
   position: relative;
@@ -1650,7 +1659,6 @@ header, main, footer {
 
 footer nav {
   border-top: 1px solid var(--text);
-  font-family: "D-DIN Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding: 12px 0 0;
