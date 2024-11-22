@@ -2,7 +2,7 @@
 // ----------------------------------------------------------------------------
 
 :root {
-	--red: #E4503E;
+	--red: #D63924;
   --text: #444;
 }
 
@@ -39,7 +39,8 @@ header {
 		border: none;
 		display: block;
 		width: 100%;
-		font-family: $oswald;
+		font-family: $instrument;
+		// font-family: $oswald;
 		// padding: 8px 16px;
 		letter-spacing: 1px;
 		color: var(--text);
@@ -74,23 +75,27 @@ header {
 
 	h1 {
 		transition: font-size .2s ease-out;
-		font-family: $biorhyme;
-		text-transform: uppercase;
+		// font-family: $biorhyme;
+		// text-transform: uppercase; 
+		text-transform: none;
 		text-align: left;
-		padding: 16px 0;
+		padding: 1rem 0;
 		margin: 0;
-		line-height: 1em;
+		// outline: 1px solid red;
+		line-height: 1rem;
 		// font-size: 1.4em;
 		font-weight: 300;
+		display: block;
 		display: inline-block;
-		@include fluid-type(font-size, 320px, 960px, 16px, 64px);
+		@include fluid-type(font-size, 320px, 960px, 24px, 72px);
 		@include mq-at-least(400px) {
 			// font-size: 1.6em;
 		}
 		@include mq-at-least(600px) {
 			// font-size: 2em;
-			padding: 48px 0 16px;
+			padding: 3rem 0 1rem;
 			display: block;
+			margin: 0 0 1rem;
 		}
 		@include mq-at-least(1200px) {
 			// font-size: 2.5em;
@@ -101,7 +106,8 @@ header {
 
 	nav {
 		border-top: 1px solid var(--text);
-		font-family: $oswald;
+		// font-family: $oswald;
+		font-weight: bold;
 		text-transform: uppercase;
 		padding: 0;
 		@extend %clearfix;
@@ -196,6 +202,7 @@ header {
 			&.active {
 				outline: 1px solid var(--text);
 				color: var(--text);
+				font-style: italic;
 
 				&:hover {
 					background: var(--red);
@@ -227,7 +234,7 @@ nav.mobile {
 		color: var(--text);
 		padding: 10px 18px;
 		// color: $white;
-		font-family: $oswald;
+		// font-family: $oswald;
 		text-transform: uppercase;
 		display: inline-block;
 		// padding: 16px;
@@ -244,11 +251,13 @@ nav.mobile {
 			background: var(--red);
 			color: $white;
 			outline-color: var(--red);
+			font-weight: bold;
 		}
 
 		&.active {
 			outline: 1px solid var(--text);
 			color: var(--text);
+			font-weight: bold;
 		}
 
 
@@ -392,16 +401,17 @@ nav.desktop {
 		// height: 70px;
 		// line-height: 70px;
 
-		@include fluid-type(top, 600px, 768px, 45px, 60px);
+		
 		// @include fluid-type(height, 320px, 768px, 70px, 165px);
 
 		button {
 			display: inline-block;
 		}
+		@include fluid-type(top, 600px, 768px, 45px, 60px);
 	}
 	@include mq-until(600px) {
-		@include fluid-type(top, 320px, 600px, 13px, 35px);
 		right: 0;
+		@include fluid-type(top, 320px, 600px, 13px, 35px);
 	}
 }
 
@@ -415,10 +425,11 @@ nav.desktop {
 .logo {
 	display: flex;
 	a {
-		width: calc( 100% - 120px );
+		// width: calc( 100% - 120px );
 		// outline: 1px solid red;
 	}
 	.toggle {
+		margin-left: auto;
 		width: 120px;
 		// outline: 1px solid blue;
 		// background: blue;
